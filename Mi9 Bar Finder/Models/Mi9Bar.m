@@ -27,6 +27,21 @@
     return self;
 }
 
++ (void)findAllWithCompletion:(void (^)(NSArray *bars, NSError *error))completionBlock {
+    PFQuery *query = [PFQuery queryWithClassName:[self parseClassName]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSMutableArray* tempArray = [NSMutableArray arrayWithCapacity:objects.count];
+        for (PFObject* object in objects) {
+            [tempArray addObject:[[self alloc] initWithPFObject:object]];
+        }
+        
+        NSArray* pfObjects = [NSArray arrayWithArray:tempArray];
+        
+        completionBlock(pfObjects, error);
+    }];
+}
+
 + (void)barWithID:(NSString *)_id completion:(void (^)(Mi9Bar *bar, NSError* error))completionBlock {
     PFQuery *query = [PFQuery queryWithClassName:[self parseClassName]];
     

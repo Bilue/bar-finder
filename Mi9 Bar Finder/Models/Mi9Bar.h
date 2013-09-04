@@ -16,7 +16,8 @@
 @property (strong) NSString* website;
 @property (strong) NSString* address;
 
-- (void)saveInBackground;
++ (void)findAllWithCompletion:(void (^)(NSArray *bars, NSError *error))completionBlock;
 + (void)barWithID:(NSString *)_id completion:(void (^)(Mi9Bar *bar, NSError* error))completionBlock;
+- (void)saveInBackground;
 
 @end

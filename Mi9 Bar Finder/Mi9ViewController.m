@@ -19,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
+        NSLog(@"BARS: %@", bars);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

@@ -27,7 +27,7 @@
     return self;
 }
 
-+ (void)findAllWithCompletion:(void (^)(NSArray *bars, NSError *error))completionBlock {
++ (void)findAllWithCompletion:(VOID_BARS_BLOCK)completionBlock {
     PFQuery *query = [PFQuery queryWithClassName:[self parseClassName]];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -42,7 +42,7 @@
     }];
 }
 
-+ (void)barWithID:(NSString *)_id completion:(void (^)(Mi9Bar *bar, NSError* error))completionBlock {
++ (void)barWithID:(NSString *)_id completion:(VOID_BAR_BLOCK)completionBlock {
     PFQuery *query = [PFQuery queryWithClassName:[self parseClassName]];
     
     [query getObjectInBackgroundWithId:_id

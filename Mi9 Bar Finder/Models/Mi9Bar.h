@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Mi9Bar;
+
+typedef void (^VOID_BARS_BLOCK)(NSArray *bars, NSError *error);
+typedef void (^VOID_BAR_BLOCK)(Mi9Bar *bar, NSError *error);
 
 @interface Mi9Bar : NSObject
 
@@ -16,8 +20,8 @@
 @property (strong) NSString* website;
 @property (strong) NSString* address;
 
-+ (void)findAllWithCompletion:(void (^)(NSArray *bars, NSError *error))completionBlock;
-+ (void)barWithID:(NSString *)_id completion:(void (^)(Mi9Bar *bar, NSError* error))completionBlock;
++ (void)findAllWithCompletion:(VOID_BARS_BLOCK)completionBlock;
++ (void)barWithID:(NSString *)_id completion:(VOID_BAR_BLOCK)completionBlock;
 - (void)saveInBackground;
 
 @end

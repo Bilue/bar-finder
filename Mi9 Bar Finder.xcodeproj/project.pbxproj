@@ -37,6 +37,9 @@
 		54B3B43417D6F8A70009F382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B40E17D6F8A60009F382 /* UIKit.framework */; };
 		54B3B43517D6F8A70009F382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41017D6F8A60009F382 /* Foundation.framework */; };
 		54B3B43D17D6F8A70009F382 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54B3B43B17D6F8A70009F382 /* InfoPlist.strings */; };
+		E9628F6417D72582004C4F87 /* Mi9BarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */; };
+		E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */; };
+		E9628F6817D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,10 @@
 		54B3B44917D6F8BD0009F382 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi9 Bar FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DFE3B5830340AD830E7210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E9628F6117D72582004C4F87 /* Mi9BarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9BarDetailViewController.h; path = "View Controllers/Mi9BarDetailViewController.h"; sourceTree = "<group>"; };
+		E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarDetailViewController.m; path = "View Controllers/Mi9BarDetailViewController.m"; sourceTree = "<group>"; };
+		E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9BarDetailViewController.xib; path = "View Controllers/Mi9BarDetailViewController.xib"; sourceTree = "<group>"; };
+		E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9BarDetailViewControllerSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +154,9 @@
 		544F7A2617D7017B00FDA281 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9628F6117D72582004C4F87 /* Mi9BarDetailViewController.h */,
+				E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */,
+				E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -232,6 +242,7 @@
 			children = (
 				54B3B43917D6F8A70009F382 /* Supporting Files */,
 				544F7A2A17D70AD700FDA281 /* Mi9BarSpec.m */,
+				E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */,
 			);
 			path = "Mi9 Bar FinderTests";
 			sourceTree = "<group>";
@@ -326,6 +337,7 @@
 				54B3B42317D6F8A60009F382 /* Default@2x.png in Resources */,
 				54B3B42517D6F8A60009F382 /* Default-568h@2x.png in Resources */,
 				54B3B42B17D6F8A70009F382 /* Mi9ViewController.xib in Resources */,
+				E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +432,7 @@
 				54B3B41F17D6F8A60009F382 /* Mi9AppDelegate.m in Sources */,
 				54B3B42817D6F8A60009F382 /* Mi9ViewController.m in Sources */,
 				544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */,
+				E9628F6417D72582004C4F87 /* Mi9BarDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				544F7A2B17D70AD700FDA281 /* Mi9BarSpec.m in Sources */,
+				E9628F6817D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

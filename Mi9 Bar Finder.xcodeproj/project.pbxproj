@@ -37,12 +37,11 @@
 		54B3B43417D6F8A70009F382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B40E17D6F8A60009F382 /* UIKit.framework */; };
 		54B3B43517D6F8A70009F382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41017D6F8A60009F382 /* Foundation.framework */; };
 		54B3B43D17D6F8A70009F382 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54B3B43B17D6F8A70009F382 /* InfoPlist.strings */; };
-		BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */; };
-		BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */; };
-
 		648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */; };
 		648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */; };
-
+		6893954417D7328800A87C8B /* Mi9UITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */; };
+		BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */; };
+		BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +95,8 @@
 		648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9WelcomeViewController.h; path = "View Controllers/Mi9WelcomeViewController.h"; sourceTree = "<group>"; };
 		648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9WelcomeViewController.m; path = "View Controllers/Mi9WelcomeViewController.m"; sourceTree = "<group>"; };
 		648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9WelcomeViewController.xib; path = "View Controllers/Mi9WelcomeViewController.xib"; sourceTree = "<group>"; };
+		6893954217D7328800A87C8B /* Mi9UITextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9UITextFieldDelegate.h; path = Models/Mi9UITextFieldDelegate.h; sourceTree = "<group>"; };
+		6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9UITextFieldDelegate.m; path = Models/Mi9UITextFieldDelegate.m; sourceTree = "<group>"; };
 		83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi9 Bar FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DFE3B5830340AD830E7210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9AddBarViewController.h; path = "View Controllers/Mi9AddBarViewController.h"; sourceTree = "<group>"; };
@@ -145,6 +146,8 @@
 			children = (
 				544F7A2717D7055700FDA281 /* Mi9Bar.h */,
 				544F7A2817D7055700FDA281 /* Mi9Bar.m */,
+				6893954217D7328800A87C8B /* Mi9UITextFieldDelegate.h */,
+				6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */,
 				BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */,
 				648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */,
+				6893954417D7328800A87C8B /* Mi9UITextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

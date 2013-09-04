@@ -7,6 +7,7 @@
 //
 
 #import "Mi9ViewController.h"
+#import "Mi9Bar.h"
 
 @interface Mi9ViewController ()
 

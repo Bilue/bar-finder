@@ -20,6 +20,8 @@
 		544F7A1F17D6FC5400FDA281 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F7A1E17D6FC5400FDA281 /* StoreKit.framework */; };
 		544F7A2117D6FC5B00FDA281 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F7A2017D6FC5B00FDA281 /* SystemConfiguration.framework */; };
 		544F7A2317D6FEA300FDA281 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F7A2217D6FEA300FDA281 /* FacebookSDK.framework */; };
+		544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F7A2817D7055700FDA281 /* Mi9Bar.m */; };
+		544F7A2B17D70AD700FDA281 /* Mi9BarSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F7A2A17D70AD700FDA281 /* Mi9BarSpec.m */; };
 		54B3B40F17D6F8A60009F382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B40E17D6F8A60009F382 /* UIKit.framework */; };
 		54B3B41117D6F8A60009F382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41017D6F8A60009F382 /* Foundation.framework */; };
 		54B3B41317D6F8A60009F382 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41217D6F8A60009F382 /* CoreGraphics.framework */; };
@@ -35,7 +37,6 @@
 		54B3B43417D6F8A70009F382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B40E17D6F8A60009F382 /* UIKit.framework */; };
 		54B3B43517D6F8A70009F382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41017D6F8A60009F382 /* Foundation.framework */; };
 		54B3B43D17D6F8A70009F382 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54B3B43B17D6F8A70009F382 /* InfoPlist.strings */; };
-		54B3B44017D6F8A70009F382 /* Mi9_Bar_FinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B3B43F17D6F8A70009F382 /* Mi9_Bar_FinderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,9 @@
 		544F7A1E17D6FC5400FDA281 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		544F7A2017D6FC5B00FDA281 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		544F7A2217D6FEA300FDA281 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		544F7A2717D7055700FDA281 /* Mi9Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9Bar.h; path = Models/Mi9Bar.h; sourceTree = "<group>"; };
+		544F7A2817D7055700FDA281 /* Mi9Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9Bar.m; path = Models/Mi9Bar.m; sourceTree = "<group>"; };
+		544F7A2A17D70AD700FDA281 /* Mi9BarSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarSpec.m; path = Models/Mi9BarSpec.m; sourceTree = "<group>"; };
 		54B3B40B17D6F8A60009F382 /* Mi9 Bar Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi9 Bar Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B3B40E17D6F8A60009F382 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54B3B41017D6F8A60009F382 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,8 +86,6 @@
 		54B3B43217D6F8A70009F382 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		54B3B43A17D6F8A70009F382 /* Mi9 Bar FinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mi9 Bar FinderTests-Info.plist"; sourceTree = "<group>"; };
 		54B3B43C17D6F8A70009F382 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		54B3B43E17D6F8A70009F382 /* Mi9_Bar_FinderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mi9_Bar_FinderTests.h; sourceTree = "<group>"; };
-		54B3B43F17D6F8A70009F382 /* Mi9_Bar_FinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mi9_Bar_FinderTests.m; sourceTree = "<group>"; };
 		54B3B44917D6F8BD0009F382 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi9 Bar FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DFE3B5830340AD830E7210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -129,6 +131,8 @@
 		544F7A2417D7017100FDA281 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				544F7A2717D7055700FDA281 /* Mi9Bar.h */,
+				544F7A2817D7055700FDA281 /* Mi9Bar.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -226,9 +230,8 @@
 		54B3B43817D6F8A70009F382 /* Mi9 Bar FinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				54B3B43E17D6F8A70009F382 /* Mi9_Bar_FinderTests.h */,
-				54B3B43F17D6F8A70009F382 /* Mi9_Bar_FinderTests.m */,
 				54B3B43917D6F8A70009F382 /* Supporting Files */,
+				544F7A2A17D70AD700FDA281 /* Mi9BarSpec.m */,
 			);
 			path = "Mi9 Bar FinderTests";
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				54B3B41B17D6F8A60009F382 /* main.m in Sources */,
 				54B3B41F17D6F8A60009F382 /* Mi9AppDelegate.m in Sources */,
 				54B3B42817D6F8A60009F382 /* Mi9ViewController.m in Sources */,
+				544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B3B44017D6F8A70009F382 /* Mi9_Bar_FinderTests.m in Sources */,
+				544F7A2B17D70AD700FDA281 /* Mi9BarSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

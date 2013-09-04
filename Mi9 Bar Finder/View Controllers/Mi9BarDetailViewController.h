@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mi9Bar.h"
 
 @interface Mi9BarDetailViewController : UIViewController
 
@@ -16,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel* reviewerName;
 @property (weak, nonatomic) IBOutlet UIImageView* mainImage;
 
+- (void)loadBarData:(Mi9Bar*)bar;
 
 @end

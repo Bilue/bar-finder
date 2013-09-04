@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Mi9UITextFieldDelegate.h"
 @interface Mi9AddBarViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UITextField* nameTextField;
@@ -23,5 +23,7 @@
 @property (nonatomic, weak) IBOutlet UILabel* locationLabel;
 @property (nonatomic, weak) IBOutlet UILabel* photoLabel;
 @property (nonatomic, weak) IBOutlet UILabel* ratingLabel;
+
+@property (nonatomic,retain) Mi9UITextFieldDelegate *tDelegate;
 
 @end

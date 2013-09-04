@@ -9,6 +9,7 @@
 #import "Mi9AppDelegate.h"
 #import <Parse/Parse.h>
 #import "Mi9ViewController.h"
+#import "Mi9WelcomeViewController.h"
 
 @implementation Mi9AppDelegate
 
@@ -20,7 +21,9 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[Mi9ViewController alloc] initWithNibName:@"Mi9ViewController" bundle:nil];
+    Mi9WelcomeViewController* mi9WelcomeViewController = [[Mi9WelcomeViewController alloc] initWithNibName:@"Mi9WelcomeViewController" bundle:nil];
+    self.viewController = [[UINavigationController alloc] initWithRootViewController:mi9WelcomeViewController];
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     

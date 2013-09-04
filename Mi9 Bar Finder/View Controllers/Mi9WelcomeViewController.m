@@ -7,6 +7,8 @@
 //
 
 #import "Mi9WelcomeViewController.h"
+#import "Mi9SignInViewController.h"
+#import "Mi9RegisterViewController.h"
 
 @interface Mi9WelcomeViewController ()
 
@@ -16,12 +18,16 @@
 
 - (IBAction) showSignInScreen
 {
+    Mi9SignInViewController* signInViewController = [[Mi9SignInViewController alloc] initWithNibName:@"Mi9SignInViewController" bundle:nil];
     
+    [self.navigationController pushViewController:signInViewController animated:YES];
 }
 
 - (IBAction) showRegisterScreen
 {
+    Mi9RegisterViewController* registerViewController = [[Mi9RegisterViewController alloc] initWithNibName:@"Mi9RegisterViewController" bundle:nil];
     
+    [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

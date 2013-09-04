@@ -31,7 +31,7 @@
 
 -(void)loadBarData:(Mi9Bar *)bar{
     self.title = bar.name;
-    self.description.text = bar.description;
+    self.description.text = bar.summary;
     self.location.text = bar.address;
     self.rating.text = [bar.rating stringValue];
 }

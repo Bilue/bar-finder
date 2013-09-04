@@ -1,0 +1,17 @@
+PODS:
+  - Kiwi (2.2.1):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - Kiwi/ARC (2.2.1)
+  - Kiwi/NonARC (2.2.1)
+  - MBProgressHUD (0.7)
+
+DEPENDENCIES:
+  - Kiwi
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  Kiwi: e6524ba0eaa1b28af7af146bdee5314b32aa3edb
+  MBProgressHUD: 1fd8591a2216d5dec6de24e09187bb03bcbe9946
+
+COCOAPODS: 0.21.0

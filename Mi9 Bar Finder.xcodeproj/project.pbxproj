@@ -126,6 +126,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		544F7A2417D7017100FDA281 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		544F7A2517D7017700FDA281 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		544F7A2617D7017B00FDA281 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		54B3B40217D6F8A60009F382 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +196,9 @@
 		54B3B41417D6F8A60009F382 /* Mi9 Bar Finder */ = {
 			isa = PBXGroup;
 			children = (
+				544F7A2617D7017B00FDA281 /* View Controllers */,
+				544F7A2517D7017700FDA281 /* Views */,
+				544F7A2417D7017100FDA281 /* Models */,
 				54B3B41D17D6F8A60009F382 /* Mi9AppDelegate.h */,
 				54B3B41E17D6F8A60009F382 /* Mi9AppDelegate.m */,
 				54B3B42617D6F8A60009F382 /* Mi9ViewController.h */,

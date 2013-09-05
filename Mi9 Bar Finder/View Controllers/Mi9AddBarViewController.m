@@ -29,6 +29,12 @@
     // Do any additional setup after loading the view from its nib.
 
     [self.photoButton addTarget:self action:@selector(addPhoto) forControlEvents:UIControlEventTouchUpInside];
+
+    [self.ratingSlider addTarget:self action:@selector(sliderUpdate) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void) sliderUpdate {
+    [self.ratingSlider setValue:round(self.ratingSlider.value) animated:YES];
 }
 
 - (void) addPhoto {

@@ -27,6 +27,27 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    [self.photoButton addTarget:self action:@selector(addPhoto) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void) addPhoto {
+
+    self.imagePicker = [[UIImagePickerController alloc] init];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:
+         UIImagePickerControllerSourceTypeCamera] == YES){
+        self.imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
+
+    }
+
+    self.imagePickerDelegate = [[Mi9PhotoPickerDelegate alloc] init];
+    // Delegate is self
+    self.imagePicker.delegate = self.imagePickerDelegate;
+
+    // Show image picker
+    [self presentViewController:self.imagePicker animated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

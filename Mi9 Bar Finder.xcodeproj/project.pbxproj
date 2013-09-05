@@ -42,6 +42,7 @@
 		6893954417D7328800A87C8B /* Mi9UITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */; };
 		BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */; };
 		BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */; };
+		BAA9E82517D88D110010C53A /* Mi9PhotoPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9AddBarViewController.h; path = "View Controllers/Mi9AddBarViewController.h"; sourceTree = "<group>"; };
 		BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9AddBarViewController.m; path = "View Controllers/Mi9AddBarViewController.m"; sourceTree = "<group>"; };
 		BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9AddBarViewController.xib; path = "View Controllers/Mi9AddBarViewController.xib"; sourceTree = "<group>"; };
+		BAA9E82317D88D110010C53A /* Mi9PhotoPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9PhotoPickerDelegate.h; sourceTree = "<group>"; };
+		BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9PhotoPickerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 		544F7A2617D7017B00FDA281 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BAA9E82217D88CF40010C53A /* AddBarDelegates */,
 				BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */,
 				BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */,
 				BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */,
@@ -264,6 +268,15 @@
 				54B3B43B17D6F8A70009F382 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAA9E82217D88CF40010C53A /* AddBarDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				BAA9E82317D88D110010C53A /* Mi9PhotoPickerDelegate.h */,
+				BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */,
+			);
+			name = AddBarDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +459,7 @@
 				BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */,
 				648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */,
 				6893954417D7328800A87C8B /* Mi9UITextFieldDelegate.m in Sources */,
+				BAA9E82517D88D110010C53A /* Mi9PhotoPickerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

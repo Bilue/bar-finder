@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mi9PhotoPickerDelegate.h"
 
 @interface Mi9AddBarViewController : UIViewController
 
@@ -23,5 +24,8 @@
 @property (nonatomic, weak) IBOutlet UILabel* locationLabel;
 @property (nonatomic, weak) IBOutlet UILabel* photoLabel;
 @property (nonatomic, weak) IBOutlet UILabel* ratingLabel;
+
+@property (nonatomic, strong) IBOutlet UIImagePickerController* imagePicker;
+@property (nonatomic, strong) Mi9PhotoPickerDelegate* imagePickerDelegate;
 
 @end

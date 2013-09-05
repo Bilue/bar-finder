@@ -17,6 +17,7 @@
 @property (nonatomic, weak) IBOutlet UIButton* photoButton;
 @property (nonatomic, weak) IBOutlet UISlider* ratingSlider;
 @property (nonatomic, weak) IBOutlet UIButton* submitButton;
+@property (nonatomic, weak) IBOutlet UIImageView* imageView;
 
 
 @property (nonatomic, weak) IBOutlet UILabel* nameLabel;

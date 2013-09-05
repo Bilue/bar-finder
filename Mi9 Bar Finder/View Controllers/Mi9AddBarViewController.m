@@ -33,21 +33,19 @@
 
 - (void) addPhoto {
 
-    self.imagePicker = [[UIImagePickerController alloc] init];
-    
+    self.imagePickerDelegate = [[Mi9PhotoPickerDelegate alloc] init];
+    self.imagePickerDelegate.parentViewController = self;
+
     if ([UIImagePickerController isSourceTypeAvailable:
          UIImagePickerControllerSourceTypeCamera] == YES){
+        self.imagePicker = [[UIImagePickerController alloc] init];
         self.imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
 
+        self.imagePicker.delegate = self.imagePickerDelegate;
+        [self presentViewController:self.imagePicker animated:YES completion:nil];
+    } else {
+        [self.imagePickerDelegate selectDefaultPicture];
     }
-
-    self.imagePickerDelegate = [[Mi9PhotoPickerDelegate alloc] init];
-    // Delegate is self
-    self.imagePicker.delegate = self.imagePickerDelegate;
-
-    // Show image picker
-    [self presentViewController:self.imagePicker animated:YES completion:nil];
-
 }
 
 - (void)didReceiveMemoryWarning

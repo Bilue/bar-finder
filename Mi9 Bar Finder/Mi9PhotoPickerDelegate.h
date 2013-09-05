@@ -10,7 +10,9 @@
 
 @interface Mi9PhotoPickerDelegate : NSObject<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (nonatomic, weak) UIViewController* parentViewController;
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
 
-
+- (void) selectDefaultPicture;
 @end

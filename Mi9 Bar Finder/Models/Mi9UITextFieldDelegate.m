@@ -8,12 +8,11 @@
 
 #import "Mi9UITextFieldDelegate.h"
 #import <QuartzCore/QuartzCore.h>
-
 @implementation Mi9UITextFieldDelegate
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     return YES;
 }
-- (void)textFieldDidBeginEditing:(UITextField *)textField{
+- (void)textFieldDidBeginEditing:(UITextField *)textField{    
 }
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
     return YES;
@@ -21,14 +20,7 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField{
 }
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    [[textField layer] setBorderColor:(__bridge CGColorRef)([UIColor redColor])];
+    return YES;
+}
 
-    return YES;
-}
-- (BOOL)textFieldShouldClear:(UITextField *)textField{
-    return YES;
-}
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    return YES;
-}
 @end

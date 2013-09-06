@@ -7,7 +7,7 @@
 //
 
 #import "Mi9AddBarViewController.h"
-
+#import "Mi9UITextFieldDelegate.h"
 @interface Mi9AddBarViewController ()
 
 @end
@@ -19,6 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        
     }
     return self;
 }
@@ -31,6 +33,10 @@
     [self.photoButton addTarget:self action:@selector(addPhoto) forControlEvents:UIControlEventTouchUpInside];
 
     [self.ratingSlider addTarget:self action:@selector(sliderUpdate) forControlEvents:UIControlEventTouchUpInside];
+
+
+    _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
+    self.nameTextField.delegate = _tDelegate;
 }
 
 - (void) sliderUpdate {

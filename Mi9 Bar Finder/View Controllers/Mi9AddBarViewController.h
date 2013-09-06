@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "Mi9PhotoPickerDelegate.h"
+
+
+#import "Mi9UITextFieldDelegate.h"
 
 @interface Mi9AddBarViewController : UIViewController
 
@@ -26,7 +30,11 @@
 @property (nonatomic, weak) IBOutlet UILabel* photoLabel;
 @property (nonatomic, weak) IBOutlet UILabel* ratingLabel;
 
+
 @property (nonatomic, strong) IBOutlet UIImagePickerController* imagePicker;
 @property (nonatomic, strong) Mi9PhotoPickerDelegate* imagePickerDelegate;
+
+@property (nonatomic,retain) Mi9UITextFieldDelegate *tDelegate;
+
 
 @end

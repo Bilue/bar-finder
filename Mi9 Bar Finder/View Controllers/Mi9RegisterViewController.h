@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Mi9RegisterViewController : UIViewController
+@interface Mi9RegisterViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField *nameTextField;
 @property (nonatomic, weak) IBOutlet UITextField *emailTextField;
@@ -17,5 +17,4 @@
 @property (nonatomic, weak) IBOutlet UIButton *registerButton;
 
 -(IBAction)registerUser:(id)sender;
-
 @end

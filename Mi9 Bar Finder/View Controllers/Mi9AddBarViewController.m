@@ -40,7 +40,8 @@
 }
 
 - (void) sliderUpdate {
-    [self.ratingSlider setValue:round(self.ratingSlider.value) animated:YES];
+    double doubleSliderValue = self.ratingSlider.value * 2;
+    [self.ratingSlider setValue:round(doubleSliderValue)/2 animated:YES];
 }
 
 - (void) addPhoto {

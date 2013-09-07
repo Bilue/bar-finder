@@ -31,8 +31,11 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
 
     [self.photoButton addTarget:self action:@selector(addPhoto) forControlEvents:UIControlEventTouchUpInside];
 
@@ -50,8 +53,27 @@
     self.locationManager.delegate = self.locationManagerDelegate;
     [self.locationManager startUpdatingLocation];
     _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
+    _tDelegate.view = self.view;
+    self.summaryTextField.delegate = _tDelegate;
     self.nameTextField.delegate = _tDelegate;
     self.ratingFullImageView.clipsToBounds = YES;
+}
+- (void)keyboardDidShow:(NSNotification *)notification
+{
+    //Assign new frame to your view
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.25];
+    [self.view setFrame:CGRectMake(0,-40,320,460)]; //here taken -20 for example i.e. your view will be scrolled to -20. change its value according to your requirement.
+    [UIView commitAnimations];
+    
+}
+
+-(void)keyboardDidHide:(NSNotification *)notification
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.25];
+    self.view.frame = CGRectMake(0,20,320,460);
+    [UIView commitAnimations];
 }
 
 - (void) sliderUpdate {

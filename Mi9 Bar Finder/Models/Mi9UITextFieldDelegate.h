@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface Mi9UITextFieldDelegate : NSObject<UITextFieldDelegate>
-
+@property (nonatomic,strong) UIView* view;
 @end
+

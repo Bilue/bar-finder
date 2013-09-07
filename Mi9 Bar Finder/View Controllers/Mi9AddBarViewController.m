@@ -10,6 +10,7 @@
 #import "Mi9UITextFieldDelegate.h"
 #import "CoreLocation/CLLocationManager.h"
 #import "Mi9LocationManagerDelegate.h"
+#import "Mi9Bar.h"
 #import "QuartzCore/CALayer.h"
 
 @interface Mi9AddBarViewController ()
@@ -56,6 +57,7 @@
     _tDelegate.view = self.view;
     self.summaryTextField.delegate = _tDelegate;
     self.nameTextField.delegate = _tDelegate;
+    self.websiteTextField.delegate = _tDelegate;
     self.ratingFullImageView.clipsToBounds = YES;
 }
 - (void)keyboardDidShow:(NSNotification *)notification
@@ -63,7 +65,7 @@
     //Assign new frame to your view
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.25];
-    [self.view setFrame:CGRectMake(0,-40,320,460)]; //here taken -20 for example i.e. your view will be scrolled to -20. change its value according to your requirement.
+    [self.view setFrame:CGRectMake(0,-100,320,460)]; //here taken -20 for example i.e. your view will be scrolled to -20. change its value according to your requirement.
     [UIView commitAnimations];
     
 }
@@ -106,7 +108,22 @@
         [self.imagePickerDelegate selectDefaultPicture];
     }
 }
-
+- (void)CreateBar {
+    Mi9Bar *bar = [[Mi9Bar alloc]init];
+    bar.name = self.nameTextField.text;
+    bar.summary = self.summaryTextField.text;
+    bar.address = self.locationTextField.text;
+    bar.website = self.websiteTextField.text;
+    bar.rating = [NSNumber numberWithFloat:self.ratingSlider.value];
+    [self UploadBarToParse:bar];
+}
+- (void)UploadBarToParse: (Mi9Bar*)bar{
+    [bar saveInBackground];
+    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
+        NSLog(@"BARS: %@", bars);
+        
+    }];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

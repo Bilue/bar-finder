@@ -16,6 +16,7 @@
 @property (nonatomic, weak) IBOutlet UITextField* nameTextField;
 @property (nonatomic, weak) IBOutlet UITextField* summaryTextField;
 @property (nonatomic, weak) IBOutlet UITextField* locationTextField;
+@property (nonatomic, weak) IBOutlet UITextField* websiteTextField;
 @property (nonatomic, weak) IBOutlet UIButton* photoButton;
 @property (nonatomic, weak) IBOutlet UISlider* ratingSlider;
 @property (nonatomic, weak) IBOutlet UIButton* submitButton;
@@ -37,6 +38,6 @@
 @property (nonatomic, strong) Mi9LocationManagerDelegate* locationManagerDelegate;
 
 @property (nonatomic,retain) Mi9UITextFieldDelegate *tDelegate;
-
+-(IBAction) CreateBar;
 
 @end

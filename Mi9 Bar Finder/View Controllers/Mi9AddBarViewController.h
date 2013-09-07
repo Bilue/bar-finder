@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "Mi9PhotoPickerDelegate.h"
-
-
+#import "Mi9LocationManagerDelegate.h"
 #import "Mi9UITextFieldDelegate.h"
 
 @interface Mi9AddBarViewController : UIViewController
@@ -33,6 +31,8 @@
 
 @property (nonatomic, strong) IBOutlet UIImagePickerController* imagePicker;
 @property (nonatomic, strong) Mi9PhotoPickerDelegate* imagePickerDelegate;
+@property (nonatomic, strong) CLLocationManager* locationManager;
+@property (nonatomic, strong) Mi9LocationManagerDelegate* locationManagerDelegate;
 
 @property (nonatomic,retain) Mi9UITextFieldDelegate *tDelegate;
 

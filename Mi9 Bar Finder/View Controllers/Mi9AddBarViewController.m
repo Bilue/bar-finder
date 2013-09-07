@@ -8,6 +8,9 @@
 
 #import "Mi9AddBarViewController.h"
 #import "Mi9UITextFieldDelegate.h"
+#import "CoreLocation/CLLocationManager.h"
+#import "Mi9LocationManagerDelegate.h"
+
 @interface Mi9AddBarViewController ()
 
 @end
@@ -34,7 +37,17 @@
 
     [self.ratingSlider addTarget:self action:@selector(sliderUpdate) forControlEvents:UIControlEventTouchUpInside];
 
+    self.locationManager = [[CLLocationManager alloc] init];
 
+    self.locationManagerDelegate = [[Mi9LocationManagerDelegate alloc] initWithCallback:^(NSString* location, NSError* error) {
+        [self.locationManager stopUpdatingLocation];
+        if (!error) {
+            self.locationTextField.text = location;
+        }
+    }];
+
+    self.locationManager.delegate = self.locationManagerDelegate;
+    [self.locationManager startUpdatingLocation];
     _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
     self.nameTextField.delegate = _tDelegate;
 }

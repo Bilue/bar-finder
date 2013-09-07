@@ -10,6 +10,7 @@
 #import "Mi9UITextFieldDelegate.h"
 #import "CoreLocation/CLLocationManager.h"
 #import "Mi9LocationManagerDelegate.h"
+#import "QuartzCore/CALayer.h"
 
 @interface Mi9AddBarViewController ()
 
@@ -50,11 +51,21 @@
     [self.locationManager startUpdatingLocation];
     _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
     self.nameTextField.delegate = _tDelegate;
+    self.ratingFullImageView.clipsToBounds = YES;
 }
 
 - (void) sliderUpdate {
-    double doubleSliderValue = self.ratingSlider.value * 2;
-    [self.ratingSlider setValue:round(doubleSliderValue)/2 animated:YES];
+    double roundedSliderValue = round(self.ratingSlider.value * 2)/2;
+    [self.ratingSlider setValue:roundedSliderValue animated:YES];
+
+
+    CGPoint origin = self.ratingFullImageView.frame.origin;
+    CGSize size = self.ratingEmptyImageView.frame.size;
+
+    double newWidth = (size.width * roundedSliderValue)/5;
+
+    self.ratingFullImageView.frame = CGRectMake(origin.x, origin.y, newWidth, size.height);
+    
 }
 
 - (void) addPhoto {

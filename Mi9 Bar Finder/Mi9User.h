@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void (^signUpUserBlock)(BOOL succeeded, NSError *error);
 
 @interface Mi9User : NSObject
 
 @property NSString *username;
 @property NSString *email;
 @property NSString *password;
+@property NSString *errorMessage;
 
-- (BOOL) saveInBackground;
+- (void) saveInBackground:(signUpUserBlock)block;
 
 - (id)initWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email;
 @end

@@ -18,27 +18,30 @@
 -(IBAction)registerUser:(id)sender
 {
     [self scrollToTop];
-    if ([self isUserInputValid]) {
-        Mi9User *user = [[Mi9User alloc] initWithUsername:self.nameTextField.text andPassword:self.passwordTextField.text andEmail:self.emailTextField.text];
-        
-        if ([user saveInBackground]){
-            // todo: go to the bar list
-        }
-    }
-    else {
-        [self handleValidationErrors];
-    }
-}
-
--(void) handleValidationErrors {
+    self.errorLabel.hidden = YES;
     
     if (![self.passwordTextField.text isEqualToString:self.confirmTextField.text])
     {
         [self showErrorLabel:@"Passwords do not match"];
     }
-    else
+    else if (![self isUserInputValid])
     {
         [self showErrorLabel:@"Please fill in all fields"];
+    }
+    else
+    {
+        Mi9User *user = [[Mi9User alloc] initWithUsername:self.nameTextField.text andPassword:self.passwordTextField.text andEmail:self.emailTextField.text];
+        
+        [user saveInBackground:^(BOOL success,NSError *error){
+            if (success)
+            {
+                // todo: show bar list
+            }
+            else {
+                // todo: get meaningful error message
+                [self showErrorLabel:error.description];
+            }
+        }];
     }
 }
 
@@ -46,8 +49,8 @@
     self.errorLabel.hidden = NO;
     self.errorLabel.text = message;
     self.errorLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green:100.0f/255.0f blue:100.0f/255.0f alpha:1.0];
-
 }
+
 
 - (BOOL) isUserInputValid {
     return

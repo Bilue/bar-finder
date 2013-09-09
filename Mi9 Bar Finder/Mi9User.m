@@ -9,6 +9,7 @@
 #import "Mi9User.h"
 #import <Parse/PFUser.h>
 
+
 @implementation Mi9User
 
 - (id)initWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email {
@@ -23,25 +24,20 @@
 }
 
 
-- (BOOL) saveInBackground {
+- (void) saveInBackground:(signUpUserBlock)userBlock {
     PFUser *user = [[PFUser alloc] init];
     user.password = self.password;
     user.email = self.email;
     user.username = self.username;
     
-    __block BOOL success = NO;
-    
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
-            NSLog(@"sign up success");
-            success = YES;
-        }
+            NSLog(@"sign up success");        }
         else {
             NSLog(@"%@", error);
-            success = NO;
+            userBlock(succeeded, error);
         }
     }];
-    return success;
 }
 
 @end

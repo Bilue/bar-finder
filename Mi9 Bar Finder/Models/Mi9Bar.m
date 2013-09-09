@@ -64,6 +64,10 @@
     [bar saveInBackground];
 }
 
+- (void)getImageWithCompletion:(VOID_IMAGE_BLOCK)completionBlock{
+    
+}
+
 - (NSString *)description {
     return [NSString stringWithFormat:@"<Mi9Bar name:\"%@\" summary:\"%@\" rating:\"%@\" website:\"%@\" address:\"%@\">", self.name, self.summary, self.rating, self.website, self.address];
 }

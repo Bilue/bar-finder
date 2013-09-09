@@ -11,6 +11,7 @@
 
 typedef void (^VOID_BARS_BLOCK)(NSArray *bars, NSError *error);
 typedef void (^VOID_BAR_BLOCK)(Mi9Bar *bar, NSError *error);
+typedef void (^VOID_IMAGE_BLOCK)(UIImage* image, NSError *error);
 
 @interface Mi9Bar : NSObject
 
@@ -22,6 +23,7 @@ typedef void (^VOID_BAR_BLOCK)(Mi9Bar *bar, NSError *error);
 
 + (void)findAllWithCompletion:(VOID_BARS_BLOCK)completionBlock;
 + (void)barWithID:(NSString *)_id completion:(VOID_BAR_BLOCK)completionBlock;
+- (void)getImageWithCompletion:(VOID_IMAGE_BLOCK)completionBlock;
 - (void)saveInBackground;
 
 @end

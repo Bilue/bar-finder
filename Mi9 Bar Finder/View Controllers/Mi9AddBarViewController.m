@@ -60,6 +60,7 @@
     self.ratingFullImageView.clipsToBounds = YES;
     [self.view addSubview:self.ratingFullImageView];
 
+    self.submitButton.tintColor = [UIColor blueColor];
     self.locationManager.delegate = self.locationManagerDelegate;
     [self.locationManager startUpdatingLocation];
     _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
@@ -119,6 +120,8 @@
     } else {
         [self.imagePickerDelegate selectDefaultPicture];
     }
+
+    [self.photoButton setTitle:@"Change Photo" forState:UIControlStateNormal];
 
     [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
         NSLog(@"BARS: %@", bars);

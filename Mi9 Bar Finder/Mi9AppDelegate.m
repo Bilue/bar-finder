@@ -9,11 +9,8 @@
 #import "Mi9AppDelegate.h"
 #import <Parse/Parse.h>
 #import "Mi9ViewController.h"
-<<<<<<< HEAD
 #import "Mi9AddBarViewController.h"
-=======
 #import "Mi9WelcomeViewController.h"
->>>>>>> 6d60aa8cc52b9ef4d639567cb38acf9281a78e16
 
 @implementation Mi9AppDelegate
 

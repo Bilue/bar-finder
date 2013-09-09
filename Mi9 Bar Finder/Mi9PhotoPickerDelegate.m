@@ -26,10 +26,6 @@
     [image drawInRect: CGRectMake(0, 0, 640, 960)];
     UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
-    // Upload image
-    NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
-
     Mi9AddBarViewController* parent = (Mi9AddBarViewController*) self.parentViewController;
     parent.imageView.image = smallImage;
 

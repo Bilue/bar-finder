@@ -22,7 +22,7 @@
 @property (nonatomic, weak) IBOutlet UIButton* submitButton;
 @property (nonatomic, weak) IBOutlet UIImageView* imageView;
 @property (nonatomic, weak) IBOutlet UIImageView* ratingEmptyImageView;
-@property (nonatomic, weak) IBOutlet UIImageView* ratingFullImageView;
+@property (nonatomic, strong) IBOutlet UIImageView* ratingFullImageView;
 
 
 @property (nonatomic, weak) IBOutlet UILabel* nameLabel;

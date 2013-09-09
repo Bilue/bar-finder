@@ -32,15 +32,15 @@
 
 - (void)viewDidLoad
 {
-    
-    [super viewDidLoad];
+    [super viewDidLoad];    
+
     // Do any additional setup after loading the view from its nib.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
 
     [self.photoButton addTarget:self action:@selector(addPhoto) forControlEvents:UIControlEventTouchUpInside];
 
-    [self.ratingSlider addTarget:self action:@selector(sliderUpdate) forControlEvents:UIControlEventTouchUpInside];
+    [self.ratingSlider addTarget:self action:@selector(sliderUpdate) forControlEvents:UIControlEventValueChanged];
 
     self.locationManager = [[CLLocationManager alloc] init];
 
@@ -51,6 +51,15 @@
         }
     }];
 
+    //initializing image from code - had to do it this way because from nib it wrecks
+    CGRect frame = self.ratingEmptyImageView.frame;
+    self.ratingFullImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"full-stars@2x.png"]];
+
+    self.ratingFullImageView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width/2, frame.size.height);
+    self.ratingFullImageView.contentMode = UIViewContentModeLeft;
+    self.ratingFullImageView.clipsToBounds = YES;
+    [self.view addSubview:self.ratingFullImageView];
+
     self.locationManager.delegate = self.locationManagerDelegate;
     [self.locationManager startUpdatingLocation];
     _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
@@ -58,8 +67,9 @@
     self.summaryTextField.delegate = _tDelegate;
     self.nameTextField.delegate = _tDelegate;
     self.websiteTextField.delegate = _tDelegate;
-    self.ratingFullImageView.clipsToBounds = YES;
+
 }
+
 - (void)keyboardDidShow:(NSNotification *)notification
 {
     //Assign new frame to your view
@@ -78,18 +88,20 @@
     [UIView commitAnimations];
 }
 
+
 - (void) sliderUpdate {
     double roundedSliderValue = round(self.ratingSlider.value * 2)/2;
-    [self.ratingSlider setValue:roundedSliderValue animated:YES];
-
-
     CGPoint origin = self.ratingFullImageView.frame.origin;
     CGSize size = self.ratingEmptyImageView.frame.size;
 
     double newWidth = (size.width * roundedSliderValue)/5;
 
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.25];
+
+    [self.ratingSlider setValue:roundedSliderValue animated:YES];
     self.ratingFullImageView.frame = CGRectMake(origin.x, origin.y, newWidth, size.height);
-    
+    [UIView commitAnimations];
 }
 
 - (void) addPhoto {
@@ -107,6 +119,12 @@
     } else {
         [self.imagePickerDelegate selectDefaultPicture];
     }
+
+    CGPoint origin = self.ratingFullImageView.frame.origin;
+    CGSize size = self.ratingEmptyImageView.frame.size;
+    self.ratingFullImageView.frame = CGRectMake(origin.x, origin.y, 180.0, size.height);
+    self.ratingFullImageView.clipsToBounds = YES;
+
 }
 - (void)CreateBar {
     Mi9Bar *bar = [[Mi9Bar alloc]init];
@@ -115,6 +133,11 @@
     bar.address = self.locationTextField.text;
     bar.website = self.websiteTextField.text;
     bar.rating = [NSNumber numberWithFloat:self.ratingSlider.value];
+
+    // Upload image
+    NSData* imageData = UIImageJPEGRepresentation(self.imageView.image, 0.05f);
+
+
     [self UploadBarToParse:bar];
 }
 - (void)UploadBarToParse: (Mi9Bar*)bar{

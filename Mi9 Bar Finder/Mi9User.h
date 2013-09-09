@@ -14,6 +14,7 @@
 @property NSString *email;
 @property NSString *password;
 
-- (void) saveInBackground;
+- (BOOL) saveInBackground;
 
+- (id)initWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email;
 @end

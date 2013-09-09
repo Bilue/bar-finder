@@ -9,7 +9,11 @@
 #import "Mi9AppDelegate.h"
 #import <Parse/Parse.h>
 #import "Mi9ViewController.h"
+<<<<<<< HEAD
 #import "Mi9AddBarViewController.h"
+=======
+#import "Mi9WelcomeViewController.h"
+>>>>>>> 6d60aa8cc52b9ef4d639567cb38acf9281a78e16
 
 @implementation Mi9AppDelegate
 
@@ -21,10 +25,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[Mi9AddBarViewController alloc]init];
 
-    self.window.rootViewController =  self.viewController;
-;
+    Mi9WelcomeViewController* mi9WelcomeViewController = [[Mi9WelcomeViewController alloc] initWithNibName:@"Mi9WelcomeViewController" bundle:nil];
+    self.viewController = [[UINavigationController alloc] initWithRootViewController:mi9WelcomeViewController];
+    
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
     return YES;

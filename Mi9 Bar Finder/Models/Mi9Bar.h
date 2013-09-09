@@ -19,6 +19,7 @@ typedef void (^VOID_BAR_BLOCK)(Mi9Bar *bar, NSError *error);
 @property (strong) NSNumber* rating;
 @property (strong) NSString* website;
 @property (strong) NSString* address;
+@property (strong) NSData* photo;
 
 + (void)findAllWithCompletion:(VOID_BARS_BLOCK)completionBlock;
 + (void)barWithID:(NSString *)_id completion:(VOID_BAR_BLOCK)completionBlock;

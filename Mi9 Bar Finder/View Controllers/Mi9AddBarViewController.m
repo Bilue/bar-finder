@@ -120,10 +120,10 @@
         [self.imagePickerDelegate selectDefaultPicture];
     }
 
-    CGPoint origin = self.ratingFullImageView.frame.origin;
-    CGSize size = self.ratingEmptyImageView.frame.size;
-    self.ratingFullImageView.frame = CGRectMake(origin.x, origin.y, 180.0, size.height);
-    self.ratingFullImageView.clipsToBounds = YES;
+    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
+        NSLog(@"BARS: %@", bars);
+
+    }];
 
 }
 - (void)CreateBar {
@@ -133,10 +133,7 @@
     bar.address = self.locationTextField.text;
     bar.website = self.websiteTextField.text;
     bar.rating = [NSNumber numberWithFloat:self.ratingSlider.value];
-
-    // Upload image
-    NSData* imageData = UIImageJPEGRepresentation(self.imageView.image, 0.05f);
-
+    bar.photo = UIImageJPEGRepresentation(self.imageView.image, 0.05f);
 
     [self UploadBarToParse:bar];
 }

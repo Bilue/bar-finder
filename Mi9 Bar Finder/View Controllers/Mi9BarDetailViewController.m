@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.map.delegate = self;
+    
 }
 
 -(void)loadBarData:(Mi9Bar *)bar{
@@ -34,6 +36,12 @@
     self.description.text = bar.summary;
     self.location.text = bar.address;
     self.rating.text = [bar.rating stringValue];
+    
+    CLLocationCoordinate2D loc = CLLocationCoordinate2DMake((CLLocationDegrees)[bar.latitude doubleValue],
+                                                            (CLLocationDegrees)[bar.longitude doubleValue]);
+    
+    [self.map setRegion:MKCoordinateRegionMakeWithDistance(loc, (CLLocationDistance)500.0,(CLLocationDistance)500.0) animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

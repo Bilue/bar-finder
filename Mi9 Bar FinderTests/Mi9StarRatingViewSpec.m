@@ -19,10 +19,38 @@ describe(@"The Star Rating View", ^{
         starRatingView = [[Mi9StarRatingView alloc] init];
     });
 
-    it(@"should load a full stars image view", ^{
-        [[starRatingView.fullStarsImageView shouldNot] beNil];
-        [[theValue(starRatingView.fullStarsImageView.frame.size.width) should] equal:theValue(112.f)];
-        [[theValue(starRatingView.fullStarsImageView.frame.size.height) should] equal:theValue(21.f)];
+    describe(@"the full stars image view", ^{
+        it(@"should exist and have a size", ^{
+            [[starRatingView.fullStarsImageView shouldNot] beNil];
+            [[starRatingView.fullStarsImageView.image should] equal:[UIImage imageNamed:@"full-stars.png"]];
+            [[theValue(starRatingView.fullStarsImageView.frame.size.width) should] equal:theValue(112.f)];
+            [[theValue(starRatingView.fullStarsImageView.frame.size.height) should] equal:theValue(21.f)];
+        });
+
+        it(@"should be a subview of the star rating view", ^{
+            [[starRatingView.fullStarsImageView.superview should] equal:starRatingView];
+        });
+
+        it(@"should clip to bounds", ^{
+            [[theValue(starRatingView.fullStarsImageView.clipsToBounds) should] equal:theValue(YES)];
+        });
+
+        it(@"should have content mode left", ^{
+            [[theValue(starRatingView.fullStarsImageView.contentMode) should] equal:theValue(UIViewContentModeLeft)];
+        });
+    });
+
+    describe(@"the empty stars image view", ^{
+        it(@"should have an empty stars image view", ^{
+            [[starRatingView.emptyStarsImageView shouldNot] beNil];
+            [[starRatingView.emptyStarsImageView.image should] equal:[UIImage imageNamed:@"empty-stars.png"]];
+            [[theValue(starRatingView.emptyStarsImageView.frame.size.width) should] equal:theValue(112.f)];
+            [[theValue(starRatingView.emptyStarsImageView.frame.size.height) should] equal:theValue(21.f)];
+        });
+
+        it(@"should be a subview of star rating view", ^{
+            [[starRatingView.emptyStarsImageView.superview should] equal:starRatingView];
+        });
     });
 
     it(@"should resize the full stars image proportionally when a star rating is set", ^{

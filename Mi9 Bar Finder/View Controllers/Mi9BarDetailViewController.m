@@ -36,10 +36,14 @@
     self.description.text = bar.summary;
     self.location.text = bar.address;
     self.rating.text = [bar.rating stringValue];
-    
-    CLLocationCoordinate2D loc = CLLocationCoordinate2DMake((CLLocationDegrees)[bar.latitude doubleValue],
+    CLLocationCoordinate2D loc;
+    if(bar.latitude != nil){
+        loc = CLLocationCoordinate2DMake((CLLocationDegrees)[bar.latitude doubleValue],
                                                             (CLLocationDegrees)[bar.longitude doubleValue]);
-    
+    }else{
+        loc = CLLocationCoordinate2DMake((CLLocationDegrees)-23.7000,
+                                         (CLLocationDegrees)133.8833);
+    }
     [self.map setRegion:MKCoordinateRegionMakeWithDistance(loc, (CLLocationDistance)500.0,(CLLocationDistance)500.0) animated:YES];
     
 }
@@ -48,6 +52,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)mapViewWillStartLoadingMap:(MKMapView *)mapView{
+    
+}
+
+- (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView{
+    
+}
+
+- (IBAction)displayGestureForTapRecognizer:(UITapGestureRecognizer *)recognizer{
+    
 }
 
 @end

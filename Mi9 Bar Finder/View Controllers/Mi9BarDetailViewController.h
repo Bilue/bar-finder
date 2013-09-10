@@ -14,14 +14,17 @@
     MKCoordinateRegion* mapRegion;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel* location;
-@property (weak, nonatomic) IBOutlet UILabel* description;
-@property (weak, nonatomic) IBOutlet UILabel* rating;
-@property (weak, nonatomic) IBOutlet UILabel* reviewerName;
-@property (weak, nonatomic) IBOutlet UIImageView* mainImage;
-@property (weak, nonatomic) IBOutlet MKMapView* map;
+@property (nonatomic, strong) IBOutlet UILabel* location;
+@property (nonatomic, strong) IBOutlet UILabel* description;
+@property (nonatomic, strong) IBOutlet UILabel* rating;
+@property (nonatomic, strong) IBOutlet UILabel* reviewerName;
+@property (nonatomic, strong) IBOutlet UIImageView* mainImage;
+@property (nonatomic, strong) IBOutlet MKMapView* map;
+@property (nonatomic, strong) IBOutlet UITapGestureRecognizer *tapRecognizer;
 
 
 - (void)loadBarData:(Mi9Bar*)bar;
+
+- (IBAction)displayGestureForTapRecognizer:(UITapGestureRecognizer *)recognizer;
 
 @end

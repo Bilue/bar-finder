@@ -23,9 +23,7 @@
         self.rating  = [parseObject objectForKey:@"rating"];
         self.website = [parseObject objectForKey:@"website"];
         self.address = [parseObject objectForKey:@"address"];
-
-        PFFile* file = [parseObject objectForKey:@"image"];
-        self.photo = file.getData;
+        self.photo  = [[parseObject objectForKey:@"image"] getData];
     }
     return self;
 }
@@ -75,7 +73,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<Mi9Bar name:\"%@\" summary:\"%@\" rating:\"%@\" website:\"%@\" address:\"%@\">", self.name, self.summary, self.rating, self.website, self.address];
+    return [NSString stringWithFormat:@"<Mi9Bar name:\"%@\" summary:\"%@\" rating:\"%@\" website:\"%@\" address:\"%@\" photo:\"%@\">", self.name, self.summary, self.rating, self.website, self.address, self.photo];
 }
 
 @end

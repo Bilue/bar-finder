@@ -123,10 +123,9 @@
 
     [self.photoButton setTitle:@"Change Photo" forState:UIControlStateNormal];
 
-    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
-        NSLog(@"BARS: %@", bars);
-
-    }];
+//    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
+//        NSLog(@"BARS: %@", bars);
+//    }];
 
 }
 - (void)CreateBar {

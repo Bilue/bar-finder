@@ -9,6 +9,7 @@
 #import "Mi9WelcomeViewController.h"
 #import "Mi9SignInViewController.h"
 #import "Mi9RegisterViewController.h"
+#import "Mi9AddBarViewController.h"
 
 @interface Mi9WelcomeViewController ()
 
@@ -43,7 +44,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"+" style:UIBarButtonItemStylePlain target:self action:@selector(showAddBar)];
 }
+
+
+-(void) showAddBar {
+    Mi9AddBarViewController* ctrl = [[Mi9AddBarViewController alloc] initWithNibName:@"Mi9AddBarViewController" bundle:nil];
+    UINavigationController* navCtrl = [[UINavigationController alloc] initWithRootViewController:ctrl];
+
+    [self presentViewController:navCtrl animated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

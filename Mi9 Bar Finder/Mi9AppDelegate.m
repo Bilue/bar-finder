@@ -25,10 +25,11 @@
 
     Mi9WelcomeViewController* mi9WelcomeViewController = [[Mi9WelcomeViewController alloc] initWithNibName:@"Mi9WelcomeViewController" bundle:nil];
     self.viewController = [[UINavigationController alloc] initWithRootViewController:mi9WelcomeViewController];
-    
+
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    
+
+
     return YES;
 }
 

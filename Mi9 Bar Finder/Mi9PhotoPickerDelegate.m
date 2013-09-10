@@ -33,7 +33,7 @@
 
 - (void) selectDefaultPicture {
     // Device has no camera
-    UIImage *image = [UIImage imageNamed:@"Default.png"];
+    UIImage *image = [UIImage imageNamed:@"Default-Bar-Image.png"];
     NSDictionary* dictionary = [NSDictionary dictionaryWithObject:image forKey:@"UIImagePickerControllerOriginalImage"];
 
     [self imagePickerController:nil didFinishPickingMediaWithInfo:dictionary];

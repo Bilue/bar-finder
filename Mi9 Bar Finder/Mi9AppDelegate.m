@@ -10,8 +10,6 @@
 #import <Parse/Parse.h>
 #import "Mi9ViewController.h"
 #import "Mi9BarDetailViewController.h"
-#import "Mi9AddBarViewController.h"
-#import "Mi9WelcomeViewController.h"
 
 @implementation Mi9AppDelegate
 
@@ -23,12 +21,17 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
-    Mi9WelcomeViewController* mi9WelcomeViewController = [[Mi9WelcomeViewController alloc] initWithNibName:@"Mi9WelcomeViewController" bundle:nil];
-
-    self.viewController = [[UINavigationController alloc] initWithRootViewController:mi9WelcomeViewController];
-
-
+    
+    Mi9BarDetailViewController *detailViewController = [[Mi9BarDetailViewController alloc] initWithNibName:@"Mi9BarDetailViewController" bundle:nil];
+    
+    __block Mi9Bar *firstBar;
+    
+    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
+        firstBar = [bars objectAtIndex:0];
+        [detailViewController loadBarData:firstBar];
+    }];
+    
+    self.viewController = detailViewController;
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mi9BarDetailViewController.h"
 
 @class Mi9ViewController;
 
@@ -14,6 +15,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UINavigationController *viewController;
+@property (strong, nonatomic) Mi9BarDetailViewController *viewController;
+
 
 @end

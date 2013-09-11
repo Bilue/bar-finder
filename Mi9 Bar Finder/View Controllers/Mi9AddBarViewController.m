@@ -12,6 +12,7 @@
 #import "Mi9LocationManagerDelegate.h"
 #import "Mi9Bar.h"
 #import "QuartzCore/CALayer.h"
+#import "Mi9ReverseGeocoder.h"
 
 @interface Mi9AddBarViewController ()
 
@@ -29,10 +30,15 @@
     }
     return self;
 }
-
+-(void)barButtonBackPressed:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];    
+    UIBarButtonItem* backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self
+                                                                  action:@selector(barButtonBackPressed:)];
+    self.navigationItem.leftBarButtonItem = backButton;
 
     // Do any additional setup after loading the view from its nib.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
@@ -41,15 +47,18 @@
     [self.photoButton addTarget:self action:@selector(addPhoto) forControlEvents:UIControlEventTouchUpInside];
 
     [self.ratingSlider addTarget:self action:@selector(sliderUpdate) forControlEvents:UIControlEventValueChanged];
-
-    self.locationManager = [[CLLocationManager alloc] init];
-
     self.locationManagerDelegate = [[Mi9LocationManagerDelegate alloc] initWithCallback:^(NSString* location, NSError* error) {
         [self.locationManager stopUpdatingLocation];
         if (!error) {
-            self.locationTextField.text = location;
+            self.location = location;
         }
     }];
+    [[Mi9ReverseGeocoder sharedGeocoder] getAddressForCurrentLocationWithCompletion:^(NSString *address, NSError *error) {
+        self.locationTextField.text = address;
+    }];
+    self.locationManager.delegate = self.locationManagerDelegate;
+    [self.locationManager startUpdatingLocation];
+
 
     //initializing image from code - had to do it this way because from nib it wrecks
     CGRect frame = self.ratingEmptyImageView.frame;
@@ -69,7 +78,9 @@
     self.nameTextField.delegate = _tDelegate;
     self.websiteTextField.delegate = _tDelegate;
     self.websiteTextField.tag = 2;
-    [self.submitButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    self.submitButton.enabled = NO;
+    
+    
 
 }
 
@@ -148,7 +159,7 @@
     Mi9Bar *bar = [[Mi9Bar alloc]init];
     bar.name = self.nameTextField.text;
     bar.summary = self.summaryTextField.text;
-    bar.address = self.locationTextField.text;
+    bar.address = self.location;
     bar.website = self.websiteTextField.text;
     bar.rating = [NSNumber numberWithFloat:self.ratingSlider.value];
     bar.photo = UIImageJPEGRepresentation(self.imageView.image, 0.05f);

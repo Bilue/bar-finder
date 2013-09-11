@@ -17,6 +17,7 @@
         textField.layer.cornerRadius = 5;
         textField.clipsToBounds      = YES;
         _viewController.submitButton.enabled = false;
+
     }else if (textField.tag == 2){
        
         if([textField.text rangeOfString:@"http://"].location == NSNotFound ){

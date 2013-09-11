@@ -53,7 +53,8 @@
 		6893955317DAF6E100A87C8B /* full-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954D17DAF6E100A87C8B /* full-stars@2x.png */; };
 		BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */; };
 		BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */; };
-		BAA1BC7017DF29B2005B3B67 /* Default-Bar-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC6F17DF29B2005B3B67 /* Default-Bar-Image.png */; };
+		BAA1BC7317E03E5F005B3B67 /* Default-Bar-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */; };
+		BAA1BC7417E03E5F005B3B67 /* Default-Bar-Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */; };
 		BAA3BCB417DAA36900ADC0EA /* Mi9LocationManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */; };
 		BAA9E82517D88D110010C53A /* Mi9PhotoPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */; };
 /* End PBXBuildFile section */
@@ -130,7 +131,8 @@
 		BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9AddBarViewController.h; path = "View Controllers/Mi9AddBarViewController.h"; sourceTree = "<group>"; };
 		BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9AddBarViewController.m; path = "View Controllers/Mi9AddBarViewController.m"; sourceTree = "<group>"; };
 		BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9AddBarViewController.xib; path = "View Controllers/Mi9AddBarViewController.xib"; sourceTree = "<group>"; };
-		BAA1BC6F17DF29B2005B3B67 /* Default-Bar-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Bar-Image.png"; path = "../../../../Downloads/Default-Bar-Image.png"; sourceTree = "<group>"; };
+		BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Bar-Image.png"; sourceTree = "<group>"; };
+		BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Bar-Image@2x.png"; sourceTree = "<group>"; };
 		BAA3BCB217DAA36900ADC0EA /* Mi9LocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9LocationManagerDelegate.h; sourceTree = "<group>"; };
 		BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9LocationManagerDelegate.m; sourceTree = "<group>"; };
 		BAA3BCB517DAADA700ADC0EA /* empty-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "empty-stars.png"; path = "../../../Stuff/Assets/images/empty-stars.png"; sourceTree = "<group>"; };
@@ -284,7 +286,8 @@
 		54B3B41517D6F8A60009F382 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BAA1BC6F17DF29B2005B3B67 /* Default-Bar-Image.png */,
+				BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */,
+				BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */,
 				BAA3BCB517DAADA700ADC0EA /* empty-stars.png */,
 				BAA3BCB617DAADA700ADC0EA /* empty-stars@2x.png */,
 				BAA3BCB717DAADA700ADC0EA /* full-stars.png */,
@@ -449,7 +452,8 @@
 				6893955317DAF6E100A87C8B /* full-stars@2x.png in Resources */,
 				648E340917D7305A00D29DCF /* Mi9RegisterViewController.xib in Resources */,
 				648E340E17D730BE00D29DCF /* Mi9SignInViewController.xib in Resources */,
-				BAA1BC7017DF29B2005B3B67 /* Default-Bar-Image.png in Resources */,
+				BAA1BC7317E03E5F005B3B67 /* Default-Bar-Image.png in Resources */,
+				BAA1BC7417E03E5F005B3B67 /* Default-Bar-Image@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

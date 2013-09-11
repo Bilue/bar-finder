@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Mi9Bar.h"
+#import "Mi9StarRatingView.h"
 
 @interface Mi9BarDetailViewController : UIViewController<MKMapViewDelegate>{
     MKCoordinateRegion* mapRegion;
@@ -21,6 +22,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView* mainImage;
 @property (nonatomic, strong) IBOutlet MKMapView* map;
 @property (nonatomic, strong) IBOutlet UITapGestureRecognizer *tapRecognizer;
+@property (nonatomic, weak) IBOutlet Mi9StarRatingView *starRating;
 
 
 - (void)loadBarData:(Mi9Bar*)bar;

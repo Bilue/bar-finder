@@ -22,8 +22,8 @@
     self.emptyStarsImageView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"empty-stars.png"]];
     self.emptyStarsImageView.frame = CGRectMake(0, 0, self.emptyStarsImageView.image.size.width, self.emptyStarsImageView.image.size.height);
 
-    [self addSubview:self.fullStarsImageView];
     [self addSubview:self.emptyStarsImageView];
+    [self addSubview:self.fullStarsImageView];
 }
 
 - (id)initWithFrame:(CGRect)frame {

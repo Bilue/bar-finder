@@ -19,6 +19,7 @@ typedef void (^LOCATION_BLOCK)(NSString* address, NSError* error);
 @implementation Mi9ReverseGeocoder
 
 @synthesize locationManager = _locationManager;
+
 + (id)sharedGeocoder {
     static dispatch_once_t once;
     static Mi9ReverseGeocoder* sharedInstance;

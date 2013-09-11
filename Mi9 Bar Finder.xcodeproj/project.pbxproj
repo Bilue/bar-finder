@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1A0EA034533E4F298E6494BE /* libPods-Mi9 Bar FinderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */; };
 		30575B8946B34D45AB15FF45 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17655BB71F6A413BBC45ADE6 /* libPods.a */; };
+		5437A92317E071210025854A /* plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437A92117E071210025854A /* plus-button.png */; };
+		5437A92417E071210025854A /* plus-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437A92217E071210025854A /* plus-button@2x.png */; };
+		5437A92717E071270025854A /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437A92517E071270025854A /* back-button.png */; };
+		5437A92817E071270025854A /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5437A92617E071270025854A /* back-button@2x.png */; };
 		544F7A0F17D6FBE800FDA281 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F7A0E17D6FBE800FDA281 /* Parse.framework */; };
 		544F7A1117D6FC1800FDA281 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F7A1017D6FC1800FDA281 /* AudioToolbox.framework */; };
 		544F7A1317D6FC1F00FDA281 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544F7A1217D6FC1F00FDA281 /* CFNetwork.framework */; };
@@ -80,6 +84,10 @@
 /* Begin PBXFileReference section */
 		17655BB71F6A413BBC45ADE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		386A9830D99C40FC8DAEDAAB /* Pods-Mi9 Bar FinderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mi9 Bar FinderTests.xcconfig"; path = "Pods/Pods-Mi9 Bar FinderTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		5437A92117E071210025854A /* plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-button.png"; sourceTree = "<group>"; };
+		5437A92217E071210025854A /* plus-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-button@2x.png"; sourceTree = "<group>"; };
+		5437A92517E071270025854A /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
+		5437A92617E071270025854A /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
 		544F7A0E17D6FBE800FDA281 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		544F7A1017D6FC1800FDA281 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		544F7A1217D6FC1F00FDA281 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -365,6 +373,10 @@
 		6893954817DAF6E100A87C8B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5437A92517E071270025854A /* back-button.png */,
+				5437A92617E071270025854A /* back-button@2x.png */,
+				5437A92117E071210025854A /* plus-button.png */,
+				5437A92217E071210025854A /* plus-button@2x.png */,
 				6893954917DAF6E100A87C8B /* .gitignore */,
 				6893954A17DAF6E100A87C8B /* empty-stars.png */,
 				6893954B17DAF6E100A87C8B /* empty-stars@2x.png */,
@@ -467,10 +479,14 @@
 				54B3B42117D6F8A60009F382 /* Default.png in Resources */,
 				54B3B42317D6F8A60009F382 /* Default@2x.png in Resources */,
 				54B3B42517D6F8A60009F382 /* Default-568h@2x.png in Resources */,
+				5437A92417E071210025854A /* plus-button@2x.png in Resources */,
+				5437A92717E071270025854A /* back-button.png in Resources */,
+				5437A92317E071210025854A /* plus-button.png in Resources */,
 				54B3B42B17D6F8A70009F382 /* Mi9ViewController.xib in Resources */,
 				E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */,
 				BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */,
 				648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */,
+				5437A92817E071270025854A /* back-button@2x.png in Resources */,
 				6893954E17DAF6E100A87C8B /* .gitignore in Resources */,
 				6893954F17DAF6E100A87C8B /* .gitignore in Resources */,
 				6893955017DAF6E100A87C8B /* empty-stars.png in Resources */,

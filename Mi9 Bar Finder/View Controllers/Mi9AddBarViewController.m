@@ -53,7 +53,7 @@
 
     //initializing image from code - had to do it this way because from nib it wrecks
     CGRect frame = self.ratingEmptyImageView.frame;
-    self.ratingFullImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"full-stars@2x.png"]];
+    self.ratingFullImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"full-stars"]];
 
     self.ratingFullImageView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width/2, frame.size.height);
     self.ratingFullImageView.contentMode = UIViewContentModeLeft;

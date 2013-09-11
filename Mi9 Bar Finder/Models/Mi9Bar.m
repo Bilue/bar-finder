@@ -23,6 +23,7 @@
         self.rating  = [parseObject objectForKey:@"rating"];
         self.website = [parseObject objectForKey:@"website"];
         self.address = [parseObject objectForKey:@"address"];
+        self.photo  = [[parseObject objectForKey:@"image"] getData];
     }
     return self;
 }
@@ -60,8 +61,15 @@
     [bar setObject:self.rating forKey:@"rating"];
     [bar setObject:self.website forKey:@"website"];
     [bar setObject:self.address forKey:@"address"];
-    
-    [bar saveInBackground];
+
+    PFFile* imageFile = [PFFile fileWithName:[NSString stringWithFormat:@"%@.jpg", self.name] data:self.photo];
+    [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError* err) {
+
+        [bar setObject:imageFile forKey:@"image"];
+
+        [bar saveInBackground];
+    }];
+
 }
 
 - (void)getImageWithCompletion:(VOID_IMAGE_BLOCK)completionBlock{
@@ -69,7 +77,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<Mi9Bar name:\"%@\" summary:\"%@\" rating:\"%@\" website:\"%@\" address:\"%@\">", self.name, self.summary, self.rating, self.website, self.address];
+    return [NSString stringWithFormat:@"<Mi9Bar name:\"%@\" summary:\"%@\" rating:\"%@\" website:\"%@\" address:\"%@\" photo:\"%@\">", self.name, self.summary, self.rating, self.website, self.address, self.photo];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import "Mi9ViewController.h"
 #import "Mi9Bar.h"
+#import "Mi9AddBarViewController.h"
+#import "Mi9ReverseGeocoder.h"
 
 @interface Mi9ViewController ()
 
@@ -17,12 +19,14 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [Mi9Bar findAllWithCompletion:^(NSArray *bars, NSError *error) {
-        NSLog(@"BARS: %@", bars);
+    [[Mi9ReverseGeocoder sharedGeocoder] getAddressForCurrentLocationWithCompletion:^(NSString *address, NSError *error) {
+        NSLog(@"Address: %@", address);
     }];
+    
 }
 
 - (void)didReceiveMemoryWarning

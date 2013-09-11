@@ -22,6 +22,7 @@ typedef void (^VOID_IMAGE_BLOCK)(UIImage* image, NSError *error);
 @property (strong) NSString* address;
 @property (strong) NSNumber* latitude;
 @property (strong) NSNumber* longitude;
+@property (strong) NSData* photo;
 
 + (void)findAllWithCompletion:(VOID_BARS_BLOCK)completionBlock;
 + (void)barWithID:(NSString *)_id completion:(VOID_BAR_BLOCK)completionBlock;

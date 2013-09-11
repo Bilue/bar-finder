@@ -37,6 +37,7 @@
 		54B3B43417D6F8A70009F382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B40E17D6F8A60009F382 /* UIKit.framework */; };
 		54B3B43517D6F8A70009F382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41017D6F8A60009F382 /* Foundation.framework */; };
 		54B3B43D17D6F8A70009F382 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54B3B43B17D6F8A70009F382 /* InfoPlist.strings */; };
+		54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */; };
 		648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */; };
 		648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */; };
 		6ACA80EEA619E848FEC130C5 /* Mi9StarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA80C72263A3A486A2245D /* Mi9StarRatingView.m */; };
@@ -50,6 +51,24 @@
 		E9628F6417D72582004C4F87 /* Mi9BarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */; };
 		E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */; };
 		E9628F6817D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */; };
+		648E340817D7305A00D29DCF /* Mi9RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */; };
+		648E340917D7305A00D29DCF /* Mi9RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */; };
+		648E340D17D730BE00D29DCF /* Mi9SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */; };
+		648E340E17D730BE00D29DCF /* Mi9SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E340C17D730BE00D29DCF /* Mi9SignInViewController.xib */; };
+		648E341217D734AD00D29DCF /* Mi9User.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E341117D734AD00D29DCF /* Mi9User.m */; };
+		6893954417D7328800A87C8B /* Mi9UITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */; };
+		6893954E17DAF6E100A87C8B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6893954717DAF6E100A87C8B /* .gitignore */; };
+		6893954F17DAF6E100A87C8B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6893954917DAF6E100A87C8B /* .gitignore */; };
+		6893955017DAF6E100A87C8B /* empty-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954A17DAF6E100A87C8B /* empty-stars.png */; };
+		6893955117DAF6E100A87C8B /* empty-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954B17DAF6E100A87C8B /* empty-stars@2x.png */; };
+		6893955217DAF6E100A87C8B /* full-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954C17DAF6E100A87C8B /* full-stars.png */; };
+		6893955317DAF6E100A87C8B /* full-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954D17DAF6E100A87C8B /* full-stars@2x.png */; };
+		BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */; };
+		BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */; };
+		BAA1BC7317E03E5F005B3B67 /* Default-Bar-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */; };
+		BAA1BC7417E03E5F005B3B67 /* Default-Bar-Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */; };
+		BAA3BCB417DAA36900ADC0EA /* Mi9LocationManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */; };
+		BAA9E82517D88D110010C53A /* Mi9PhotoPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +98,7 @@
 		544F7A2717D7055700FDA281 /* Mi9Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9Bar.h; path = Models/Mi9Bar.h; sourceTree = "<group>"; };
 		544F7A2817D7055700FDA281 /* Mi9Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9Bar.m; path = Models/Mi9Bar.m; sourceTree = "<group>"; };
 		544F7A2A17D70AD700FDA281 /* Mi9BarSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarSpec.m; path = Models/Mi9BarSpec.m; sourceTree = "<group>"; };
+		545E026517D73C7600112C7A /* LocationSimulation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = LocationSimulation.gpx; path = "Mi9 Bar Finder/Assets/LocationSimulation.gpx"; sourceTree = "<group>"; };
 		54B3B40B17D6F8A60009F382 /* Mi9 Bar Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi9 Bar Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B3B40E17D6F8A60009F382 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54B3B41017D6F8A60009F382 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +120,8 @@
 		54B3B43A17D6F8A70009F382 /* Mi9 Bar FinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mi9 Bar FinderTests-Info.plist"; sourceTree = "<group>"; };
 		54B3B43C17D6F8A70009F382 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		54B3B44917D6F8BD0009F382 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		54E142F917D72E9200EC56D3 /* Mi9ReverseGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9ReverseGeocoder.h; path = Models/Mi9ReverseGeocoder.h; sourceTree = "<group>"; };
+		54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9ReverseGeocoder.m; path = Models/Mi9ReverseGeocoder.m; sourceTree = "<group>"; };
 		648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9WelcomeViewController.h; path = "View Controllers/Mi9WelcomeViewController.h"; sourceTree = "<group>"; };
 		648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9WelcomeViewController.m; path = "View Controllers/Mi9WelcomeViewController.m"; sourceTree = "<group>"; };
 		648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9WelcomeViewController.xib; path = "View Controllers/Mi9WelcomeViewController.xib"; sourceTree = "<group>"; };
@@ -109,6 +131,22 @@
 		6ACA8272855BEF9C3767CF6D /* full-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars@2x.png"; sourceTree = "<group>"; };
 		6ACA899D30F89FD91DF93B6B /* empty-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-stars@2x.png"; sourceTree = "<group>"; };
 		6ACA8AFD3F669BFBEE8330E6 /* Mi9StarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9StarRatingView.h; sourceTree = "<group>"; };
+		648E340517D7305A00D29DCF /* Mi9RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9RegisterViewController.h; path = "View Controllers/Mi9RegisterViewController.h"; sourceTree = "<group>"; };
+		648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9RegisterViewController.m; path = "View Controllers/Mi9RegisterViewController.m"; sourceTree = "<group>"; };
+		648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9RegisterViewController.xib; path = "View Controllers/Mi9RegisterViewController.xib"; sourceTree = "<group>"; };
+		648E340A17D730BE00D29DCF /* Mi9SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9SignInViewController.h; path = "View Controllers/Mi9SignInViewController.h"; sourceTree = "<group>"; };
+		648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9SignInViewController.m; path = "View Controllers/Mi9SignInViewController.m"; sourceTree = "<group>"; };
+		648E340C17D730BE00D29DCF /* Mi9SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9SignInViewController.xib; path = "View Controllers/Mi9SignInViewController.xib"; sourceTree = "<group>"; };
+		648E341017D734AD00D29DCF /* Mi9User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9User.h; sourceTree = "<group>"; };
+		648E341117D734AD00D29DCF /* Mi9User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9User.m; sourceTree = "<group>"; };
+		6893954217D7328800A87C8B /* Mi9UITextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9UITextFieldDelegate.h; path = Models/Mi9UITextFieldDelegate.h; sourceTree = "<group>"; };
+		6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9UITextFieldDelegate.m; path = Models/Mi9UITextFieldDelegate.m; sourceTree = "<group>"; };
+		6893954717DAF6E100A87C8B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6893954917DAF6E100A87C8B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6893954A17DAF6E100A87C8B /* empty-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-stars.png"; sourceTree = "<group>"; };
+		6893954B17DAF6E100A87C8B /* empty-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-stars@2x.png"; sourceTree = "<group>"; };
+		6893954C17DAF6E100A87C8B /* full-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars.png"; sourceTree = "<group>"; };
+		6893954D17DAF6E100A87C8B /* full-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars@2x.png"; sourceTree = "<group>"; };
 		83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi9 Bar FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1A400317DE0CA6002F3A18 /* Mi9StarRatingViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9StarRatingViewSpec.m; sourceTree = "<group>"; };
 		B1DFE3B5830340AD830E7210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -118,6 +156,15 @@
 		E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarDetailViewController.m; path = "View Controllers/Mi9BarDetailViewController.m"; sourceTree = "<group>"; };
 		E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9BarDetailViewController.xib; path = "View Controllers/Mi9BarDetailViewController.xib"; sourceTree = "<group>"; };
 		E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9BarDetailViewControllerSpec.m; sourceTree = "<group>"; };
+		BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9AddBarViewController.h; path = "View Controllers/Mi9AddBarViewController.h"; sourceTree = "<group>"; };
+		BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9AddBarViewController.m; path = "View Controllers/Mi9AddBarViewController.m"; sourceTree = "<group>"; };
+		BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9AddBarViewController.xib; path = "View Controllers/Mi9AddBarViewController.xib"; sourceTree = "<group>"; };
+		BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Bar-Image.png"; sourceTree = "<group>"; };
+		BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Bar-Image@2x.png"; sourceTree = "<group>"; };
+		BAA3BCB217DAA36900ADC0EA /* Mi9LocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9LocationManagerDelegate.h; sourceTree = "<group>"; };
+		BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9LocationManagerDelegate.m; sourceTree = "<group>"; };
+		BAA9E82317D88D110010C53A /* Mi9PhotoPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9PhotoPickerDelegate.h; sourceTree = "<group>"; };
+		BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9PhotoPickerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +211,10 @@
 			children = (
 				544F7A2717D7055700FDA281 /* Mi9Bar.h */,
 				544F7A2817D7055700FDA281 /* Mi9Bar.m */,
+				54E142F917D72E9200EC56D3 /* Mi9ReverseGeocoder.h */,
+				54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */,
+				648E341017D734AD00D29DCF /* Mi9User.h */,
+				648E341117D734AD00D29DCF /* Mi9User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -183,9 +234,19 @@
 				E9628F6117D72582004C4F87 /* Mi9BarDetailViewController.h */,
 				E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */,
 				E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */,
+				BAA9E82217D88CF40010C53A /* AddBarDelegates */,
+				BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */,
+				BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */,
+				BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */,
 				648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */,
 				648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */,
 				648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */,
+				648E340517D7305A00D29DCF /* Mi9RegisterViewController.h */,
+				648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */,
+				648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */,
+				648E340A17D730BE00D29DCF /* Mi9SignInViewController.h */,
+				648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */,
+				648E340C17D730BE00D29DCF /* Mi9SignInViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				E9563D8217DDE7E8000F1A48 /* MapKit.framework */,
+				545E026517D73C7600112C7A /* LocationSimulation.gpx */,
 				54B3B44917D6F8BD0009F382 /* Podfile */,
 				54B3B41417D6F8A60009F382 /* Mi9 Bar Finder */,
 				54B3B43817D6F8A70009F382 /* Mi9 Bar FinderTests */,
@@ -241,6 +303,7 @@
 		54B3B41417D6F8A60009F382 /* Mi9 Bar Finder */ = {
 			isa = PBXGroup;
 			children = (
+				6893954517DAF6E100A87C8B /* Assets */,
 				544F7A2617D7017B00FDA281 /* View Controllers */,
 				544F7A2517D7017700FDA281 /* Views */,
 				544F7A2417D7017100FDA281 /* Models */,
@@ -258,6 +321,8 @@
 		54B3B41517D6F8A60009F382 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */,
+				BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */,
 				54B3B41617D6F8A60009F382 /* Mi9 Bar Finder-Info.plist */,
 				54B3B41717D6F8A60009F382 /* InfoPlist.strings */,
 				54B3B41A17D6F8A60009F382 /* main.m */,
@@ -306,6 +371,48 @@
 				6ACA84DB19E6C4547FCAFFFC /* Images */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		6893954517DAF6E100A87C8B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6893954617DAF6E100A87C8B /* Fonts */,
+				6893954817DAF6E100A87C8B /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6893954617DAF6E100A87C8B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6893954717DAF6E100A87C8B /* .gitignore */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6893954817DAF6E100A87C8B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6893954917DAF6E100A87C8B /* .gitignore */,
+				6893954A17DAF6E100A87C8B /* empty-stars.png */,
+				6893954B17DAF6E100A87C8B /* empty-stars@2x.png */,
+				6893954C17DAF6E100A87C8B /* full-stars.png */,
+				6893954D17DAF6E100A87C8B /* full-stars@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BAA9E82217D88CF40010C53A /* AddBarDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				6893954217D7328800A87C8B /* Mi9UITextFieldDelegate.h */,
+				6893954317D7328800A87C8B /* Mi9UITextFieldDelegate.m */,
+				BAA9E82317D88D110010C53A /* Mi9PhotoPickerDelegate.h */,
+				BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */,
+				BAA3BCB217DAA36900ADC0EA /* Mi9LocationManagerDelegate.h */,
+				BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */,
+			);
+			name = AddBarDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,11 +497,22 @@
 				54B3B42517D6F8A60009F382 /* Default-568h@2x.png in Resources */,
 				54B3B42B17D6F8A70009F382 /* Mi9ViewController.xib in Resources */,
 				E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */,
+				BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */,
 				648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */,
 				6ACA8FA4BF53203B9F4DAEAA /* empty-stars.png in Resources */,
 				6ACA8ADCD082B2103C2A5383 /* empty-stars@2x.png in Resources */,
 				6ACA854620F399C9A64154DF /* full-stars.png in Resources */,
 				6ACA81807893B20500866D2F /* full-stars@2x.png in Resources */,
+				6893954E17DAF6E100A87C8B /* .gitignore in Resources */,
+				6893954F17DAF6E100A87C8B /* .gitignore in Resources */,
+				6893955017DAF6E100A87C8B /* empty-stars.png in Resources */,
+				6893955117DAF6E100A87C8B /* empty-stars@2x.png in Resources */,
+				6893955217DAF6E100A87C8B /* full-stars.png in Resources */,
+				6893955317DAF6E100A87C8B /* full-stars@2x.png in Resources */,
+				648E340917D7305A00D29DCF /* Mi9RegisterViewController.xib in Resources */,
+				648E340E17D730BE00D29DCF /* Mi9SignInViewController.xib in Resources */,
+				BAA1BC7317E03E5F005B3B67 /* Default-Bar-Image.png in Resources */,
+				BAA1BC7417E03E5F005B3B67 /* Default-Bar-Image@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +608,16 @@
 				54B3B42817D6F8A60009F382 /* Mi9ViewController.m in Sources */,
 				544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */,
 				E9628F6417D72582004C4F87 /* Mi9BarDetailViewController.m in Sources */,
+				54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */,
+				BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */,
 				648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */,
 				6ACA80EEA619E848FEC130C5 /* Mi9StarRatingView.m in Sources */,
+				6893954417D7328800A87C8B /* Mi9UITextFieldDelegate.m in Sources */,
+				BAA9E82517D88D110010C53A /* Mi9PhotoPickerDelegate.m in Sources */,
+				BAA3BCB417DAA36900ADC0EA /* Mi9LocationManagerDelegate.m in Sources */,
+				648E340817D7305A00D29DCF /* Mi9RegisterViewController.m in Sources */,
+				648E340D17D730BE00D29DCF /* Mi9SignInViewController.m in Sources */,
+				648E341217D734AD00D29DCF /* Mi9User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

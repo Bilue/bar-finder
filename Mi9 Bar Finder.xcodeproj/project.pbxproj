@@ -37,6 +37,7 @@
 		54B3B43417D6F8A70009F382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B40E17D6F8A60009F382 /* UIKit.framework */; };
 		54B3B43517D6F8A70009F382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3B41017D6F8A60009F382 /* Foundation.framework */; };
 		54B3B43D17D6F8A70009F382 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54B3B43B17D6F8A70009F382 /* InfoPlist.strings */; };
+		54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */; };
 		648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */; };
 		648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		544F7A2717D7055700FDA281 /* Mi9Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9Bar.h; path = Models/Mi9Bar.h; sourceTree = "<group>"; };
 		544F7A2817D7055700FDA281 /* Mi9Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9Bar.m; path = Models/Mi9Bar.m; sourceTree = "<group>"; };
 		544F7A2A17D70AD700FDA281 /* Mi9BarSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarSpec.m; path = Models/Mi9BarSpec.m; sourceTree = "<group>"; };
+		545E026517D73C7600112C7A /* LocationSimulation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = LocationSimulation.gpx; path = "Mi9 Bar Finder/Assets/LocationSimulation.gpx"; sourceTree = "<group>"; };
 		54B3B40B17D6F8A60009F382 /* Mi9 Bar Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi9 Bar Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B3B40E17D6F8A60009F382 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54B3B41017D6F8A60009F382 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,8 @@
 		54B3B43A17D6F8A70009F382 /* Mi9 Bar FinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mi9 Bar FinderTests-Info.plist"; sourceTree = "<group>"; };
 		54B3B43C17D6F8A70009F382 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		54B3B44917D6F8BD0009F382 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		54E142F917D72E9200EC56D3 /* Mi9ReverseGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9ReverseGeocoder.h; path = Models/Mi9ReverseGeocoder.h; sourceTree = "<group>"; };
+		54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9ReverseGeocoder.m; path = Models/Mi9ReverseGeocoder.m; sourceTree = "<group>"; };
 		648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9WelcomeViewController.h; path = "View Controllers/Mi9WelcomeViewController.h"; sourceTree = "<group>"; };
 		648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9WelcomeViewController.m; path = "View Controllers/Mi9WelcomeViewController.m"; sourceTree = "<group>"; };
 		648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9WelcomeViewController.xib; path = "View Controllers/Mi9WelcomeViewController.xib"; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			children = (
 				544F7A2717D7055700FDA281 /* Mi9Bar.h */,
 				544F7A2817D7055700FDA281 /* Mi9Bar.m */,
+				54E142F917D72E9200EC56D3 /* Mi9ReverseGeocoder.h */,
+				54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 		54B3B40217D6F8A60009F382 = {
 			isa = PBXGroup;
 			children = (
+				545E026517D73C7600112C7A /* LocationSimulation.gpx */,
 				54B3B44917D6F8BD0009F382 /* Podfile */,
 				54B3B41417D6F8A60009F382 /* Mi9 Bar Finder */,
 				54B3B43817D6F8A70009F382 /* Mi9 Bar FinderTests */,
@@ -429,6 +436,7 @@
 				54B3B41F17D6F8A60009F382 /* Mi9AppDelegate.m in Sources */,
 				54B3B42817D6F8A60009F382 /* Mi9ViewController.m in Sources */,
 				544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */,
+				54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */,
 				648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

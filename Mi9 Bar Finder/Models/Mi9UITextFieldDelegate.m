@@ -11,13 +11,30 @@
 @implementation Mi9UITextFieldDelegate
 
 - (void)ValidateText:(UITextField *)textField{
-    
-    if(textField.text.length == 0){
+     NSLog(@"%i",textField.tag);
+    if(textField.text.length == 0 && textField.tag != 2){
     textField.layer.borderColor=[[UIColor colorWithRed:255.0f/255.0f green:178.0f/255.0f blue:178.0f/255.0f alpha:1.0] CGColor];
-    textField.layer.borderWidth=5.0;
-    textField.layer.cornerRadius = 5;
-    textField.clipsToBounds      = YES;
-    _viewController.submitButton.enabled = false;
+        textField.layer.borderWidth=5.0;
+        textField.layer.cornerRadius = 5;
+        textField.clipsToBounds      = YES;
+        _viewController.submitButton.enabled = false;
+    }else if (textField.tag == 2){
+       
+        if([textField.text rangeOfString:@"http://"].location == NSNotFound ){
+            NSLog(@"%lu",(unsigned long)[textField.text rangeOfString:@"http://"].location);
+            textField.layer.borderColor=[[UIColor colorWithRed:255.0f/255.0f green:178.0f/255.0f blue:178.0f/255.0f alpha:1.0] CGColor];
+            textField.layer.borderWidth=5.0;
+            textField.layer.cornerRadius = 5;
+            textField.clipsToBounds      = YES;
+            _viewController.submitButton.enabled = false;
+            
+        }else{
+            textField.layer.borderColor=[[UIColor colorWithRed:0.0f/255.0f green:255.0f/255.0f blue:178.0f/255.0f alpha:1.0] CGColor];
+            textField.layer.borderWidth=5.0;
+            textField.layer.cornerRadius = 5;
+            textField.clipsToBounds      = YES;
+            _viewController.submitButton.enabled = true;
+        }
     }else{
         textField.layer.borderColor=[[UIColor colorWithRed:0.0f/255.0f green:255.0f/255.0f blue:178.0f/255.0f alpha:1.0] CGColor];
         textField.layer.borderWidth=5.0;

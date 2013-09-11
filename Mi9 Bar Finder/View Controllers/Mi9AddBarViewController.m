@@ -68,6 +68,8 @@
     self.summaryTextField.delegate = _tDelegate;
     self.nameTextField.delegate = _tDelegate;
     self.websiteTextField.delegate = _tDelegate;
+    self.websiteTextField.tag = 2;
+    [self.submitButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
 
 }
 

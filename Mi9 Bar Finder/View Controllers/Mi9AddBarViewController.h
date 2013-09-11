@@ -10,7 +10,7 @@
 #import "Mi9PhotoPickerDelegate.h"
 #import "Mi9LocationManagerDelegate.h"
 #import "Mi9UITextFieldDelegate.h"
-
+@class Mi9UITextFieldDelegate;
 @interface Mi9AddBarViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UITextField* nameTextField;
@@ -23,6 +23,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView* imageView;
 @property (nonatomic, weak) IBOutlet UIImageView* ratingEmptyImageView;
 @property (nonatomic, strong) IBOutlet UIImageView* ratingFullImageView;
+@property (nonatomic,strong) IBOutlet UIScrollView * scrollView;
 
 
 @property (nonatomic, weak) IBOutlet UILabel* nameLabel;

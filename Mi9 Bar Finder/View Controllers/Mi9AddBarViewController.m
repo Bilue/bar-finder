@@ -58,13 +58,13 @@
     self.ratingFullImageView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width/2, frame.size.height);
     self.ratingFullImageView.contentMode = UIViewContentModeLeft;
     self.ratingFullImageView.clipsToBounds = YES;
-    [self.view addSubview:self.ratingFullImageView];
+    [self.scrollView addSubview:self.ratingFullImageView];
 
     self.submitButton.tintColor = [UIColor blueColor];
     self.locationManager.delegate = self.locationManagerDelegate;
     [self.locationManager startUpdatingLocation];
     _tDelegate = [[Mi9UITextFieldDelegate alloc]init];
-    _tDelegate.view = self.view;
+    _tDelegate.viewController = self;
     self.summaryTextField.delegate = _tDelegate;
     self.nameTextField.delegate = _tDelegate;
     self.websiteTextField.delegate = _tDelegate;
@@ -73,20 +73,37 @@
 
 - (void)keyboardDidShow:(NSNotification *)notification
 {
+    NSDictionary* info = [notification userInfo];
+    NSLog(@"%@", info);
+    NSValue *avalue = [info objectForKey:UIKeyboardFrameBeginUserInfoKey];
+    CGSize KeyboardSize = [avalue CGRectValue].size;
     //Assign new frame to your view
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.25];
-    [self.view setFrame:CGRectMake(0,-100,320,460)]; //here taken -20 for example i.e. your view will be scrolled to -20. change its value according to your requirement.
-    [UIView commitAnimations];
+
+    CGRect viewFrame=self.view.frame;
+    viewFrame.size.height -= KeyboardSize.height;
+    _scrollView.frame=viewFrame;
+    // CGRect textViewdRect = [customTextViewTwo frame];
+   // [_scrollView scrollRectToVisible: textViewdRect animated:YES];
+    for (UIView *view in self.scrollView.subviews) {
+        if (view.isFirstResponder) {
+            CGRect textViewdRect = [view frame];
+            [_scrollView scrollRectToVisible: textViewdRect animated:YES];
+        }
+    }
+ 
     
 }
 
 -(void)keyboardDidHide:(NSNotification *)notification
 {
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.25];
-    self.view.frame = CGRectMake(0,20,320,460);
-    [UIView commitAnimations];
+
+    NSDictionary *info = [notification userInfo];
+    NSValue *avalue = [info objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGSize KeyboardSize = [avalue CGRectValue].size;
+    CGRect viewFrame = _scrollView.frame;
+    viewFrame.size.height += KeyboardSize.height;
+    _scrollView.frame = viewFrame;
+   
 }
 
 

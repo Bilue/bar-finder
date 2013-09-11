@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Mi9AddBarViewController.h"
+@class Mi9AddBarViewController;
 @interface Mi9UITextFieldDelegate : NSObject<UITextFieldDelegate>
-@property (nonatomic,strong) UIView* view;
+@property (nonatomic,assign) Mi9AddBarViewController* viewController;
 @end
 

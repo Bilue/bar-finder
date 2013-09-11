@@ -11,6 +11,10 @@
 
 
 @implementation Mi9User
++ (void) signInWithUsername:(NSString*)username andPassword:(NSString*)password WithCompletion:(signinUserBlock)block
+{
+    [PFUser logInWithUsernameInBackground:username password:password block:block];
+}
 
 - (id)initWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email {
     self = [super init];

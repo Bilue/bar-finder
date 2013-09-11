@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
+
 typedef void (^signUpUserBlock)(BOOL succeeded, NSError *error);
+typedef void (^signinUserBlock)(PFUser *user, NSError *error);
 
 @interface Mi9User : NSObject
 
@@ -19,4 +22,6 @@ typedef void (^signUpUserBlock)(BOOL succeeded, NSError *error);
 - (void) saveInBackground:(signUpUserBlock)block;
 
 - (id)initWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email;
+
++ (void) signInWithUsername:(NSString*)username andPassword:(NSString*)password WithCompletion:(signinUserBlock)block;
 @end

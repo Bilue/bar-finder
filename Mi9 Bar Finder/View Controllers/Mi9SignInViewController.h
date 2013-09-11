@@ -10,4 +10,11 @@
 
 @interface Mi9SignInViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
+@property (nonatomic, weak) IBOutlet UITextField *usernameTextField;
+@property (nonatomic, weak) IBOutlet UIButton *signinButton;
+@property (nonatomic, weak) IBOutlet UILabel *errorLabel;
+@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+
+-(IBAction)signinUser:(id)sender;
 @end

@@ -11,7 +11,6 @@
 @implementation Mi9UITextFieldDelegate
 
 - (void)ValidateText:(UITextField *)textField{
-     NSLog(@"%i",textField.tag);
     if(textField.text.length == 0 && textField.tag != 2){
     textField.layer.borderColor=[[UIColor colorWithRed:255.0f/255.0f green:178.0f/255.0f blue:178.0f/255.0f alpha:1.0] CGColor];
         textField.layer.borderWidth=5.0;
@@ -21,7 +20,6 @@
     }else if (textField.tag == 2){
        
         if([textField.text rangeOfString:@"http://"].location == NSNotFound ){
-            NSLog(@"%lu",(unsigned long)[textField.text rangeOfString:@"http://"].location);
             textField.layer.borderColor=[[UIColor colorWithRed:255.0f/255.0f green:178.0f/255.0f blue:178.0f/255.0f alpha:1.0] CGColor];
             textField.layer.borderWidth=5.0;
             textField.layer.cornerRadius = 5;

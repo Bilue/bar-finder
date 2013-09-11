@@ -76,7 +76,6 @@
 - (void)keyboardDidShow:(NSNotification *)notification
 {
     NSDictionary* info = [notification userInfo];
-    NSLog(@"%@", info);
     NSValue *avalue = [info objectForKey:UIKeyboardFrameBeginUserInfoKey];
     CGSize KeyboardSize = [avalue CGRectValue].size;
     //Assign new frame to your view
@@ -84,8 +83,6 @@
     CGRect viewFrame=self.view.frame;
     viewFrame.size.height -= KeyboardSize.height;
     _scrollView.frame=viewFrame;
-    // CGRect textViewdRect = [customTextViewTwo frame];
-   // [_scrollView scrollRectToVisible: textViewdRect animated:YES];
     for (UIView *view in self.scrollView.subviews) {
         if (view.isFirstResponder) {
             CGRect textViewdRect = [view frame];

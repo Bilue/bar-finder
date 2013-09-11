@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     self.map.delegate = self;
-    
 }
 
 -(void)loadBarData:(Mi9Bar *)bar{

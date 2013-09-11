@@ -17,7 +17,6 @@
 
 @property (nonatomic, strong) IBOutlet UILabel* location;
 @property (nonatomic, strong) IBOutlet UILabel* description;
-@property (nonatomic, strong) IBOutlet UILabel* rating;
 @property (nonatomic, strong) IBOutlet UILabel* reviewerName;
 @property (nonatomic, strong) IBOutlet UIImageView* mainImage;
 @property (nonatomic, strong) IBOutlet MKMapView* map;

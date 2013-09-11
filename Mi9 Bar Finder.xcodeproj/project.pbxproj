@@ -40,6 +40,11 @@
 		54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */; };
 		648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */; };
 		648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */; };
+		648E340817D7305A00D29DCF /* Mi9RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */; };
+		648E340917D7305A00D29DCF /* Mi9RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */; };
+		648E340D17D730BE00D29DCF /* Mi9SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */; };
+		648E340E17D730BE00D29DCF /* Mi9SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E340C17D730BE00D29DCF /* Mi9SignInViewController.xib */; };
+		648E341217D734AD00D29DCF /* Mi9User.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E341117D734AD00D29DCF /* Mi9User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,14 @@
 		648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9WelcomeViewController.h; path = "View Controllers/Mi9WelcomeViewController.h"; sourceTree = "<group>"; };
 		648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9WelcomeViewController.m; path = "View Controllers/Mi9WelcomeViewController.m"; sourceTree = "<group>"; };
 		648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9WelcomeViewController.xib; path = "View Controllers/Mi9WelcomeViewController.xib"; sourceTree = "<group>"; };
+		648E340517D7305A00D29DCF /* Mi9RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9RegisterViewController.h; path = "View Controllers/Mi9RegisterViewController.h"; sourceTree = "<group>"; };
+		648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9RegisterViewController.m; path = "View Controllers/Mi9RegisterViewController.m"; sourceTree = "<group>"; };
+		648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9RegisterViewController.xib; path = "View Controllers/Mi9RegisterViewController.xib"; sourceTree = "<group>"; };
+		648E340A17D730BE00D29DCF /* Mi9SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9SignInViewController.h; path = "View Controllers/Mi9SignInViewController.h"; sourceTree = "<group>"; };
+		648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9SignInViewController.m; path = "View Controllers/Mi9SignInViewController.m"; sourceTree = "<group>"; };
+		648E340C17D730BE00D29DCF /* Mi9SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9SignInViewController.xib; path = "View Controllers/Mi9SignInViewController.xib"; sourceTree = "<group>"; };
+		648E341017D734AD00D29DCF /* Mi9User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9User.h; sourceTree = "<group>"; };
+		648E341117D734AD00D29DCF /* Mi9User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9User.m; sourceTree = "<group>"; };
 		83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi9 Bar FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DFE3B5830340AD830E7210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -144,6 +157,8 @@
 				544F7A2817D7055700FDA281 /* Mi9Bar.m */,
 				54E142F917D72E9200EC56D3 /* Mi9ReverseGeocoder.h */,
 				54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */,
+				648E341017D734AD00D29DCF /* Mi9User.h */,
+				648E341117D734AD00D29DCF /* Mi9User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -161,6 +176,12 @@
 				648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */,
 				648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */,
 				648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */,
+				648E340517D7305A00D29DCF /* Mi9RegisterViewController.h */,
+				648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */,
+				648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */,
+				648E340A17D730BE00D29DCF /* Mi9SignInViewController.h */,
+				648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */,
+				648E340C17D730BE00D29DCF /* Mi9SignInViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -342,6 +363,8 @@
 				54B3B42517D6F8A60009F382 /* Default-568h@2x.png in Resources */,
 				54B3B42B17D6F8A70009F382 /* Mi9ViewController.xib in Resources */,
 				648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */,
+				648E340917D7305A00D29DCF /* Mi9RegisterViewController.xib in Resources */,
+				648E340E17D730BE00D29DCF /* Mi9SignInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +461,9 @@
 				544F7A2917D7055700FDA281 /* Mi9Bar.m in Sources */,
 				54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */,
 				648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */,
+				648E340817D7305A00D29DCF /* Mi9RegisterViewController.m in Sources */,
+				648E340D17D730BE00D29DCF /* Mi9SignInViewController.m in Sources */,
+				648E341217D734AD00D29DCF /* Mi9User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

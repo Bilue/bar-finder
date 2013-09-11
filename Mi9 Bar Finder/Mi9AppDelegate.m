@@ -24,12 +24,14 @@
     // Override point for customization after application launch.
 
     Mi9WelcomeViewController* mi9WelcomeViewController = [[Mi9WelcomeViewController alloc] initWithNibName:@"Mi9WelcomeViewController" bundle:nil];
-    Mi9AddBarViewController* rootView = [[Mi9AddBarViewController alloc]init];
-    self.viewController = [[UINavigationController alloc] initWithRootViewController:rootView];
-    
+
+    self.viewController = [[UINavigationController alloc] initWithRootViewController:mi9WelcomeViewController];
+
+
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    
+
+
     return YES;
 }
 

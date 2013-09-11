@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.map.delegate = self;
     
 }
@@ -35,7 +34,7 @@
     self.title = bar.name;
     self.description.text = bar.summary;
     self.location.text = bar.address;
-    self.rating.text = [bar.rating stringValue];
+    [self.starRating setRating:[bar.rating floatValue] outOf:5.f];
     CLLocationCoordinate2D loc;
     if(bar.latitude != nil){
         loc = CLLocationCoordinate2DMake((CLLocationDegrees)[bar.latitude doubleValue],

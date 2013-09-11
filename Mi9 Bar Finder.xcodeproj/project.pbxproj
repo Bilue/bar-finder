@@ -137,10 +137,6 @@
 		BAA1BC6F17DF29B2005B3B67 /* Default-Bar-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Bar-Image.png"; path = "../../../../Downloads/Default-Bar-Image.png"; sourceTree = "<group>"; };
 		BAA3BCB217DAA36900ADC0EA /* Mi9LocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9LocationManagerDelegate.h; sourceTree = "<group>"; };
 		BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9LocationManagerDelegate.m; sourceTree = "<group>"; };
-		BAA3BCB517DAADA700ADC0EA /* empty-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "empty-stars.png"; path = "../../../Stuff/Assets/images/empty-stars.png"; sourceTree = "<group>"; };
-		BAA3BCB617DAADA700ADC0EA /* empty-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "empty-stars@2x.png"; path = "../../../Stuff/Assets/images/empty-stars@2x.png"; sourceTree = "<group>"; };
-		BAA3BCB717DAADA700ADC0EA /* full-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "full-stars.png"; path = "../../../Stuff/Assets/images/full-stars.png"; sourceTree = "<group>"; };
-		BAA3BCB817DAADA700ADC0EA /* full-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "full-stars@2x.png"; path = "../../../Stuff/Assets/images/full-stars@2x.png"; sourceTree = "<group>"; };
 		BAA9E82317D88D110010C53A /* Mi9PhotoPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9PhotoPickerDelegate.h; sourceTree = "<group>"; };
 		BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9PhotoPickerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,10 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				BAA1BC6F17DF29B2005B3B67 /* Default-Bar-Image.png */,
-				BAA3BCB517DAADA700ADC0EA /* empty-stars.png */,
-				BAA3BCB617DAADA700ADC0EA /* empty-stars@2x.png */,
-				BAA3BCB717DAADA700ADC0EA /* full-stars.png */,
-				BAA3BCB817DAADA700ADC0EA /* full-stars@2x.png */,
 				54B3B41617D6F8A60009F382 /* Mi9 Bar Finder-Info.plist */,
 				54B3B41717D6F8A60009F382 /* InfoPlist.strings */,
 				54B3B41A17D6F8A60009F382 /* main.m */,

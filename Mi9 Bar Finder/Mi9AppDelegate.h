@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class Mi9ViewController;
+@class Mi9BarDetailViewController;
 
 @interface Mi9AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) Mi9ViewController *viewController;
+@property (strong, nonatomic) Mi9BarDetailViewController *viewController;
 
 @end

@@ -9,6 +9,7 @@
 #import "Mi9AppDelegate.h"
 #import <Parse/Parse.h>
 #import "Mi9ViewController.h"
+#import "Mi9BarDetailViewController.h"
 
 @implementation Mi9AppDelegate
 
@@ -17,10 +18,10 @@
     [Parse setApplicationId:@"nKjmCtB6XxWtcjveCccE7fyHtrkpoTTQa7UEbVEf"
                   clientKey:@"FmLFD5wJlVT4T7rvi5oAZQwWoLm8DA4wMaHo3xsv"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[Mi9ViewController alloc] initWithNibName:@"Mi9ViewController" bundle:nil];
+    self.viewController = [[Mi9BarDetailViewController alloc] initWithNibName:@"Mi9BarDetailViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     

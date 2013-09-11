@@ -40,17 +40,6 @@
 		54E142FB17D72E9200EC56D3 /* Mi9ReverseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E142FA17D72E9200EC56D3 /* Mi9ReverseGeocoder.m */; };
 		648E33FE17D7275C00D29DCF /* Mi9WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */; };
 		648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */; };
-		6ACA80EEA619E848FEC130C5 /* Mi9StarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA80C72263A3A486A2245D /* Mi9StarRatingView.m */; };
-		6ACA81807893B20500866D2F /* full-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA8272855BEF9C3767CF6D /* full-stars@2x.png */; };
-		6ACA854620F399C9A64154DF /* full-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA820F19544562115E9BF3 /* full-stars.png */; };
-		6ACA8ADCD082B2103C2A5383 /* empty-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA899D30F89FD91DF93B6B /* empty-stars@2x.png */; };
-		6ACA8FA4BF53203B9F4DAEAA /* empty-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA81B47E7DB3F5A89EA9A6 /* empty-stars.png */; };
-		8B1A400417DE0CA6002F3A18 /* Mi9StarRatingViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A400317DE0CA6002F3A18 /* Mi9StarRatingViewSpec.m */; };
-		E9563D8317DDE7E8000F1A48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9563D8217DDE7E8000F1A48 /* MapKit.framework */; };
-		E9563D8517DDE80D000F1A48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9563D8417DDE80D000F1A48 /* MapKit.framework */; };
-		E9628F6417D72582004C4F87 /* Mi9BarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */; };
-		E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */; };
-		E9628F6817D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */; };
 		648E340817D7305A00D29DCF /* Mi9RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */; };
 		648E340917D7305A00D29DCF /* Mi9RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */; };
 		648E340D17D730BE00D29DCF /* Mi9SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E340B17D730BE00D29DCF /* Mi9SignInViewController.m */; };
@@ -63,12 +52,19 @@
 		6893955117DAF6E100A87C8B /* empty-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954B17DAF6E100A87C8B /* empty-stars@2x.png */; };
 		6893955217DAF6E100A87C8B /* full-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954C17DAF6E100A87C8B /* full-stars.png */; };
 		6893955317DAF6E100A87C8B /* full-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6893954D17DAF6E100A87C8B /* full-stars@2x.png */; };
+		6ACA80EEA619E848FEC130C5 /* Mi9StarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA80C72263A3A486A2245D /* Mi9StarRatingView.m */; };
+		8B1A400417DE0CA6002F3A18 /* Mi9StarRatingViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A400317DE0CA6002F3A18 /* Mi9StarRatingViewSpec.m */; };
 		BA98F79C17D725F500F7E78F /* Mi9AddBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */; };
 		BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */; };
 		BAA1BC7317E03E5F005B3B67 /* Default-Bar-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC7117E03E5F005B3B67 /* Default-Bar-Image.png */; };
 		BAA1BC7417E03E5F005B3B67 /* Default-Bar-Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA1BC7217E03E5F005B3B67 /* Default-Bar-Image@2x.png */; };
 		BAA3BCB417DAA36900ADC0EA /* Mi9LocationManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */; };
 		BAA9E82517D88D110010C53A /* Mi9PhotoPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */; };
+		E9563D8317DDE7E8000F1A48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9563D8217DDE7E8000F1A48 /* MapKit.framework */; };
+		E9563D8517DDE80D000F1A48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9563D8417DDE80D000F1A48 /* MapKit.framework */; };
+		E9628F6417D72582004C4F87 /* Mi9BarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */; };
+		E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */; };
+		E9628F6817D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,12 +121,6 @@
 		648E33FB17D7275C00D29DCF /* Mi9WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9WelcomeViewController.h; path = "View Controllers/Mi9WelcomeViewController.h"; sourceTree = "<group>"; };
 		648E33FC17D7275C00D29DCF /* Mi9WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9WelcomeViewController.m; path = "View Controllers/Mi9WelcomeViewController.m"; sourceTree = "<group>"; };
 		648E33FD17D7275C00D29DCF /* Mi9WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9WelcomeViewController.xib; path = "View Controllers/Mi9WelcomeViewController.xib"; sourceTree = "<group>"; };
-		6ACA80C72263A3A486A2245D /* Mi9StarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9StarRatingView.m; sourceTree = "<group>"; };
-		6ACA81B47E7DB3F5A89EA9A6 /* empty-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-stars.png"; sourceTree = "<group>"; };
-		6ACA820F19544562115E9BF3 /* full-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars.png"; sourceTree = "<group>"; };
-		6ACA8272855BEF9C3767CF6D /* full-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars@2x.png"; sourceTree = "<group>"; };
-		6ACA899D30F89FD91DF93B6B /* empty-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-stars@2x.png"; sourceTree = "<group>"; };
-		6ACA8AFD3F669BFBEE8330E6 /* Mi9StarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9StarRatingView.h; sourceTree = "<group>"; };
 		648E340517D7305A00D29DCF /* Mi9RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9RegisterViewController.h; path = "View Controllers/Mi9RegisterViewController.h"; sourceTree = "<group>"; };
 		648E340617D7305A00D29DCF /* Mi9RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9RegisterViewController.m; path = "View Controllers/Mi9RegisterViewController.m"; sourceTree = "<group>"; };
 		648E340717D7305A00D29DCF /* Mi9RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9RegisterViewController.xib; path = "View Controllers/Mi9RegisterViewController.xib"; sourceTree = "<group>"; };
@@ -147,15 +137,11 @@
 		6893954B17DAF6E100A87C8B /* empty-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty-stars@2x.png"; sourceTree = "<group>"; };
 		6893954C17DAF6E100A87C8B /* full-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars.png"; sourceTree = "<group>"; };
 		6893954D17DAF6E100A87C8B /* full-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full-stars@2x.png"; sourceTree = "<group>"; };
+		6ACA80C72263A3A486A2245D /* Mi9StarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9StarRatingView.m; sourceTree = "<group>"; };
+		6ACA8AFD3F669BFBEE8330E6 /* Mi9StarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9StarRatingView.h; sourceTree = "<group>"; };
 		83C815B684AB4A6EBFDBED3E /* libPods-Mi9 Bar FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi9 Bar FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1A400317DE0CA6002F3A18 /* Mi9StarRatingViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9StarRatingViewSpec.m; sourceTree = "<group>"; };
 		B1DFE3B5830340AD830E7210 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		E9563D8217DDE7E8000F1A48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		E9563D8417DDE80D000F1A48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		E9628F6117D72582004C4F87 /* Mi9BarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9BarDetailViewController.h; path = "View Controllers/Mi9BarDetailViewController.h"; sourceTree = "<group>"; };
-		E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarDetailViewController.m; path = "View Controllers/Mi9BarDetailViewController.m"; sourceTree = "<group>"; };
-		E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9BarDetailViewController.xib; path = "View Controllers/Mi9BarDetailViewController.xib"; sourceTree = "<group>"; };
-		E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9BarDetailViewControllerSpec.m; sourceTree = "<group>"; };
 		BA98F79917D725F500F7E78F /* Mi9AddBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9AddBarViewController.h; path = "View Controllers/Mi9AddBarViewController.h"; sourceTree = "<group>"; };
 		BA98F79A17D725F500F7E78F /* Mi9AddBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9AddBarViewController.m; path = "View Controllers/Mi9AddBarViewController.m"; sourceTree = "<group>"; };
 		BA98F79B17D725F500F7E78F /* Mi9AddBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9AddBarViewController.xib; path = "View Controllers/Mi9AddBarViewController.xib"; sourceTree = "<group>"; };
@@ -165,6 +151,12 @@
 		BAA3BCB317DAA36900ADC0EA /* Mi9LocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9LocationManagerDelegate.m; sourceTree = "<group>"; };
 		BAA9E82317D88D110010C53A /* Mi9PhotoPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9PhotoPickerDelegate.h; sourceTree = "<group>"; };
 		BAA9E82417D88D110010C53A /* Mi9PhotoPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9PhotoPickerDelegate.m; sourceTree = "<group>"; };
+		E9563D8217DDE7E8000F1A48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9563D8417DDE80D000F1A48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9628F6117D72582004C4F87 /* Mi9BarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mi9BarDetailViewController.h; path = "View Controllers/Mi9BarDetailViewController.h"; sourceTree = "<group>"; };
+		E9628F6217D72582004C4F87 /* Mi9BarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mi9BarDetailViewController.m; path = "View Controllers/Mi9BarDetailViewController.m"; sourceTree = "<group>"; };
+		E9628F6317D72582004C4F87 /* Mi9BarDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Mi9BarDetailViewController.xib; path = "View Controllers/Mi9BarDetailViewController.xib"; sourceTree = "<group>"; };
+		E9628F6717D72862004C4F87 /* Mi9BarDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9BarDetailViewControllerSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,7 +246,6 @@
 		54B3B40217D6F8A60009F382 = {
 			isa = PBXGroup;
 			children = (
-				E9563D8217DDE7E8000F1A48 /* MapKit.framework */,
 				545E026517D73C7600112C7A /* LocationSimulation.gpx */,
 				54B3B44917D6F8BD0009F382 /* Podfile */,
 				54B3B41417D6F8A60009F382 /* Mi9 Bar Finder */,
@@ -278,6 +269,7 @@
 		54B3B40D17D6F8A60009F382 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9563D8217DDE7E8000F1A48 /* MapKit.framework */,
 				E9563D8417DDE80D000F1A48 /* MapKit.framework */,
 				544F7A2217D6FEA300FDA281 /* FacebookSDK.framework */,
 				544F7A2017D6FC5B00FDA281 /* SystemConfiguration.framework */,
@@ -313,7 +305,6 @@
 				54B3B42717D6F8A60009F382 /* Mi9ViewController.m */,
 				54B3B42917D6F8A70009F382 /* Mi9ViewController.xib */,
 				54B3B41517D6F8A60009F382 /* Supporting Files */,
-				6ACA86BFCD6E5A142056F2F1 /* Assets */,
 			);
 			path = "Mi9 Bar Finder";
 			sourceTree = "<group>";
@@ -352,25 +343,6 @@
 				54B3B43B17D6F8A70009F382 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6ACA84DB19E6C4547FCAFFFC /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				6ACA81B47E7DB3F5A89EA9A6 /* empty-stars.png */,
-				6ACA899D30F89FD91DF93B6B /* empty-stars@2x.png */,
-				6ACA820F19544562115E9BF3 /* full-stars.png */,
-				6ACA8272855BEF9C3767CF6D /* full-stars@2x.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		6ACA86BFCD6E5A142056F2F1 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				6ACA84DB19E6C4547FCAFFFC /* Images */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		6893954517DAF6E100A87C8B /* Assets */ = {
@@ -499,10 +471,6 @@
 				E9628F6517D72582004C4F87 /* Mi9BarDetailViewController.xib in Resources */,
 				BA98F79D17D725F500F7E78F /* Mi9AddBarViewController.xib in Resources */,
 				648E33FF17D7275C00D29DCF /* Mi9WelcomeViewController.xib in Resources */,
-				6ACA8FA4BF53203B9F4DAEAA /* empty-stars.png in Resources */,
-				6ACA8ADCD082B2103C2A5383 /* empty-stars@2x.png in Resources */,
-				6ACA854620F399C9A64154DF /* full-stars.png in Resources */,
-				6ACA81807893B20500866D2F /* full-stars@2x.png in Resources */,
 				6893954E17DAF6E100A87C8B /* .gitignore in Resources */,
 				6893954F17DAF6E100A87C8B /* .gitignore in Resources */,
 				6893955017DAF6E100A87C8B /* empty-stars.png in Resources */,

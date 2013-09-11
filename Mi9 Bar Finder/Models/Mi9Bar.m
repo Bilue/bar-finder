@@ -9,6 +9,11 @@
 #import "Mi9Bar.h"
 #import <Parse/Parse.h>
 
+@interface Mi9Bar ()
+@property (strong) PFFile* photoFile;
+@property (strong) NSData* photo;
+@end
+
 @implementation Mi9Bar
 
 + (NSString *)parseClassName {
@@ -18,12 +23,12 @@
 - (instancetype)initWithPFObject:(PFObject *)parseObject {
     self = [self init];
     if (self) {
-        self.name    = [parseObject objectForKey:@"name"];
-        self.summary = [parseObject objectForKey:@"summary"];
-        self.rating  = [parseObject objectForKey:@"rating"];
-        self.website = [parseObject objectForKey:@"website"];
-        self.address = [parseObject objectForKey:@"address"];
-        self.photo  = [[parseObject objectForKey:@"image"] getData];
+        self.name       = [parseObject objectForKey:@"name"];
+        self.summary    = [parseObject objectForKey:@"summary"];
+        self.rating     = [parseObject objectForKey:@"rating"];
+        self.website    = [parseObject objectForKey:@"website"];
+        self.address    = [parseObject objectForKey:@"address"];
+        self.photoFile  = [parseObject objectForKey:@"image"];
     }
     return self;
 }
@@ -73,7 +78,10 @@
 }
 
 - (void)getImageWithCompletion:(VOID_IMAGE_BLOCK)completionBlock{
-    
+    [self.photoFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+        UIImage* image = [[UIImage alloc] initWithData:data];
+        completionBlock(image, error);
+    } progressBlock:nil];
 }
 
 - (NSString *)description {
